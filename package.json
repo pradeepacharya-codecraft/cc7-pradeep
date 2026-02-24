@@ -1,0 +1,29 @@
+{
+  "name": "cc7-pradeep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepacharya-codecraft/cc7-pradeep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pradeepacharya-codecraft/cc7-pradeep/issues"
+  },
+  "homepage": "https://github.com/pradeepacharya-codecraft/cc7-pradeep#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "ts-node": "^10.9.2",
+    "vitest": "^4.0.18"
+  }
+}

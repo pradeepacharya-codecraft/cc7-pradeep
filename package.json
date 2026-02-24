@@ -2,9 +2,13 @@
   "name": "cc7-pradeep",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "excercise.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "repository": {
     "type": "git",
@@ -18,12 +22,9 @@
     "url": "https://github.com/pradeepacharya-codecraft/cc7-pradeep/issues"
   },
   "homepage": "https://github.com/pradeepacharya-codecraft/cc7-pradeep#readme",
-  "dependencies": {
-    "typescript": "^5.9.3"
-  },
   "devDependencies": {
-    "@types/node": "^25.3.0",
-    "ts-node": "^10.9.2",
+    "@types/assert": "^1.5.11",
+    "@vitest/coverage-v8": "^4.0.18",
     "vitest": "^4.0.18"
   }
 }

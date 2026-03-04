@@ -33,7 +33,7 @@ assert.deepStrictEqual(
   "filtering the food which dont have sugar in it has failed",
 );
 
-//food which has bothchili and oil
+//food which has both chili and oil
 
 const chilliOilyFood = foods
   .filter((food) => {

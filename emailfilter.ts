@@ -14,11 +14,11 @@ const emails = [
 const emailRegex = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
 
 const emailsF = emails
+  .filter((email) => emailRegex.test(email))
   .map((email) => {
     const match = email.match(emailRegex);
-    return match ? match[0].toLowerCase() : null;
-  })
-  .filter((email) => email !== null);
+    return match![0].toLowerCase();
+  });
 
 assert.deepStrictEqual(
   emailsF,

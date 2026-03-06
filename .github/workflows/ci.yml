@@ -1,4 +1,4 @@
-name: Run TypeScript Files
+name: Run TypeScript Files (Native Node Support)
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         run: npm install
 
       - name: Run all TypeScript files
-        run: npx ts-node $(find . -name "*.ts")
+        run: node $(find . -name "*.ts")

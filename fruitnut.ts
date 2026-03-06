@@ -242,21 +242,16 @@ assert.deepStrictEqual(
  * Find the total nutrition value of all fruits and nuts
  */
 
-function totalNutirtion() {
-  return objects.reduce(function (acc, obj) {
-    let total = 0;
-
-    Object.values(obj.nutritions).forEach(function (val) {
-      total = total + val;
-    });
-
-    return acc + total;
-  }, 0);
-}
+const totalNutrition = () =>
+  objects.reduce(
+    (acc, obj) =>
+      acc + Object.values(obj.nutritions).reduce((sum, val) => sum + val, 0),
+    0,
+  );
 const total = 577;
 
 assert.deepStrictEqual(
-  totalNutirtion(),
+  totalNutrition(),
   577,
   "total nutrition value didnt match",
 );
@@ -361,11 +356,9 @@ assert.deepStrictEqual(
 /**
  * What is the total amount of proteins I will end up intaking if I eat each of the nuts except nuts those do not solve sugar issues as doctor has warned that my skin will become pale in case I eat such nuts?
  */
-
 function totalProtein() {
   return objects
-    .filter((obj) => obj.type === "nut")
-    .filter((obj) => obj.treats.includes("sugar"))
+    .filter((obj) => obj.type === "nut" && obj.treats.includes("sugar"))
     .reduce((acc, obj) => {
       return acc + obj.nutritions.protein;
     }, 0);

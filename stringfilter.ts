@@ -5,7 +5,7 @@
  */
 import assert from "assert";
 
-let items = [
+const items = [
   "mangalore",
   "semangin",
   "2 lonely",

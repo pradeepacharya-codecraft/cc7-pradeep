@@ -248,7 +248,6 @@ const totalNutrition = () =>
       acc + Object.values(obj.nutritions).reduce((sum, val) => sum + val, 0),
     0,
   );
-const total = 577;
 
 assert.deepStrictEqual(
   totalNutrition(),

@@ -8,7 +8,7 @@ import assert from "assert";
  */
 
 function generateFirstSquares(n: number): number[] {
-  let res: number[] = [];
+  const res: number[] = [];
   for (let i = 1; i <= n; i++) {
     res.push(i * i);
   }

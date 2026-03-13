@@ -37,7 +37,7 @@ assert.deepStrictEqual(
 
 const chilliOilyFood = foods
   .filter((food) => {
-    let ingredients = Object.values(food)[0];
+    const ingredients = Object.values(food)[0];
     return ingredients!.includes("chilli") && ingredients?.includes("oil");
   })
   .map((food) => Object.keys(food)[0]);

@@ -9,7 +9,7 @@ function printNumbers(n: number, evenOrOdd: string): number[] | string {
     return "Second argument must be 'even' or 'odd'";
   }
 
-  let result: number[] = [];
+  const result: number[] = [];
   let number = 1;
 
   while (result.length < n) {

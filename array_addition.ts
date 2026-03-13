@@ -9,12 +9,12 @@ import assert from "assert";
  */
 
 function addArrays(a: number[], b: number[]): number[] {
-  let res: number[] = [];
-  let maxLength = Math.max(a.length, b.length);
+  const res: number[] = [];
+  const maxLength = Math.max(a.length, b.length);
 
   for (let i = 0; i < maxLength; i++) {
-    let valueA = a[i] ?? 0;
-    let valueB = b[i] ?? 0;
+    const valueA = a[i] ?? 0;
+    const valueB = b[i] ?? 0;
 
     res.push(valueA + valueB);
   }
@@ -22,8 +22,8 @@ function addArrays(a: number[], b: number[]): number[] {
   return res;
 }
 
-let array1 = [1, 2, 3];
-let array2 = [1, 2, 3];
+const array1 = [1, 2, 3];
+const array2 = [1, 2, 3];
 
 // 1
 assert.deepStrictEqual(

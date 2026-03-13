@@ -70,7 +70,7 @@ const shapes: Shape[] = [
 
 let smallest = shapes[0];
 console.log(shapes);
-for (let shape of shapes) {
+for (const shape of shapes) {
   if (shape.area() < smallest!.area()) {
     smallest = shape;
   }

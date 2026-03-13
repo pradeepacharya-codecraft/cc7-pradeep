@@ -12,13 +12,13 @@ function padZerosBeforeNumber(number: number, numOfDigits: number): string {
     return "Number of digits cannot be negative";
   }
 
-  let numStr = number.toString();
+  const numStr = number.toString();
 
   if (numStr.length >= numOfDigits) {
     return numStr;
   }
 
-  let zerosNeeded = numOfDigits - numStr.length;
+  const zerosNeeded = numOfDigits - numStr.length;
   let result = "";
 
   for (let i = 0; i < zerosNeeded; i++) {
@@ -30,11 +30,11 @@ function padZerosBeforeNumber(number: number, numOfDigits: number): string {
   return result;
 }
 
-let n1 = 233;
-let n2 = 45;
-let n3 = 12345;
-let n4 = 5;
-let n5 = -1;
+const n1 = 233;
+const n2 = 45;
+const n3 = 12345;
+const n4 = 5;
+const n5 = -1;
 
 assert(
   padZerosBeforeNumber(n1, 6) === "000233",

@@ -117,7 +117,7 @@ function getQuotesContainingWord(word: string) {
   return quotes
     .filter((quote) => {
       word = word.toLowerCase();
-      let txt = quote.text.toLowerCase();
+      const txt = quote.text.toLowerCase();
       return txt.includes(word);
     })
     .map((quote) => quote.text);

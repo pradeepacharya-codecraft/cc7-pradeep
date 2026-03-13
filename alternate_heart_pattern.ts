@@ -33,10 +33,10 @@ function alternatingHeartPattern(n: number): string {
   return result;
 }
 
-let n1 = 1;
-let n2 = 2;
-let n3 = 3;
-let n4 = -1;
+const n1 = 1;
+const n2 = 2;
+const n3 = 3;
+const n4 = -1;
 
 assert(
   alternatingHeartPattern(n1) === "💚",

@@ -20,16 +20,16 @@ function fib(num: number) {
   let prev = 0;
   let cur = 1;
   for (let i = 2; i <= num; i++) {
-    let next = prev + cur;
+    const next = prev + cur;
     prev = cur;
     cur = next;
   }
   return cur;
 }
 
-let list = [2, 1, 5, 7];
+const list = [2, 1, 5, 7];
 
-let fibIndex = list.map((index) => fib(index));
+const fibIndex = list.map((index) => fib(index));
 
 assert.deepStrictEqual(
   fibIndex,

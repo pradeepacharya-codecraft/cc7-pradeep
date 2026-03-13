@@ -19,7 +19,7 @@ function convertToBinary(numInDecimal: number): string {
   let number = numInDecimal;
 
   while (number > 0) {
-    let remainder = number % 2;
+    const remainder = number % 2;
     result = remainder + result;
     number = Math.floor(number / 2);
   }
@@ -27,10 +27,10 @@ function convertToBinary(numInDecimal: number): string {
   return result;
 }
 
-let n1 = 10;
-let n2 = 1000;
-let n3 = 0;
-let n4 = -5;
+const n1 = 10;
+const n2 = 1000;
+const n3 = 0;
+const n4 = -5;
 
 assert(
   convertToBinary(n1) === "1010",

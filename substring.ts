@@ -10,7 +10,7 @@ function getStringSpecial(str: string): string {
   let result = "";
 
   for (let i = 0; i < str.length; i++) {
-    let currentChar = str[i];
+    const currentChar = str[i];
     let alreadyExists = false;
 
     for (let j = 0; j < result.length; j++) {
@@ -30,10 +30,10 @@ function getStringSpecial(str: string): string {
   return result;
 }
 
-let s1 = "a dream that is";
-let s2 = "unparliamentary";
-let s3 = "abcabc";
-let s4 = "";
+const s1 = "a dream that is";
+const s2 = "unparliamentary";
+const s3 = "abcabc";
+const s4 = "";
 
 assert(
   getStringSpecial(s1) === "a dre",

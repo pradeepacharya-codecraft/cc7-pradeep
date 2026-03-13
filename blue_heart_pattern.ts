@@ -29,11 +29,11 @@ function blueHeartPattern(n: number): string {
   return result;
 }
 
-let n1 = 0;
-let n2 = 2;
-let n3 = -1;
-let n4 = 4;
-let n5 = 5;
+const n1 = 0;
+const n2 = 2;
+const n3 = -1;
+const n4 = 4;
+const n5 = 5;
 
 assert(
   blueHeartPattern(n1) === "",

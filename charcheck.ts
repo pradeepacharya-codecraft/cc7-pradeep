@@ -8,7 +8,7 @@ const items = ["browl", "faaast", "energy", "stand", "eat", "lunch"];
 
 const filterOut = items.filter((item) => /[u,g]/.test(item));
 
-let expected = ["energy", "lunch"];
+const expected = ["energy", "lunch"];
 assert.deepStrictEqual(
   filterOut,
   expected,

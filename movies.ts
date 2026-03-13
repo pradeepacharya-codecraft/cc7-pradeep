@@ -39,3 +39,4 @@ const res = {
   "2018": ["Insidious: The Last Key", "The Strange Ones", "Sweet Country"],
 };
 assert.deepStrictEqual(moviesByYear(), res, "moviesBy year function failed ");
+console.log(actors());

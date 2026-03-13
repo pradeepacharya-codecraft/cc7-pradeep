@@ -16,7 +16,7 @@ function heartPattern(n: number): string {
   let result = "";
 
   for (let i = 1; i <= n; i++) {
-    let heart = i % 2 === 1 ? "💚" : "💙";
+    const heart = i % 2 === 1 ? "💚" : "💙";
 
     for (let j = 1; j <= i; j++) {
       result += heart;
@@ -34,10 +34,10 @@ function heartPattern(n: number): string {
   return result;
 }
 
-let n1 = 1;
-let n2 = 2;
-let n3 = 3;
-let n4 = -1;
+const n1 = 1;
+const n2 = 2;
+const n3 = 3;
+const n4 = -1;
 
 assert(
   heartPattern(n1) === "💚",

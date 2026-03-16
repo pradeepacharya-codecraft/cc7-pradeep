@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const __filepath = fileURLToPath(import.meta.url);
 const __dirpath = path.dirname(__filepath);
 
-async function getFileType(
+export async function getFileType(
   path: string,
 ): Promise<"File" | "Directory" | "OTHER"> {
   try {
@@ -20,7 +20,7 @@ async function getFileType(
   }
 }
 
-async function getFileContents(p: string): Promise<string | string[]> {
+export async function getFileContents(p: string): Promise<string | string[]> {
   try {
     const type = await getFileType(p);
     if (type === "File") return p;
@@ -31,7 +31,7 @@ async function getFileContents(p: string): Promise<string | string[]> {
   }
 }
 
-async function getFileSize(p: string): Promise<number> {
+export async function getFileSize(p: string): Promise<number> {
   try {
     const contents = await getFileContents(p);
     const stats = await fs.stat(p);

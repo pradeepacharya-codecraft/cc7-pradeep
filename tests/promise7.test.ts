@@ -1,23 +1,57 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { APIService } from "../promise7.ts";
 
 describe("APIService", () => {
-  it("should fetch a post by id", async () => {
-    const api = new APIService();
+  const api = new APIService();
 
-    const post = await api.fetchPost(1);
+  it("fetchPost returns a post", async () => {
+    const mockPost = {
+      userId: 1,
+      id: 1,
+      title: "Test Post",
+      body: "Test body",
+    };
 
-    expect(post).toHaveProperty("id");
-    expect(post).toHaveProperty("title");
-    expect(post.id).toBe(1);
+    global.fetch = vi.fn(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockPost),
+      }),
+    ) as any;
+
+    const result = await api.fetchPost(1);
+
+    expect(result).toEqual(mockPost);
   });
 
-  it("should fetch limited number of comments", async () => {
-    const api = new APIService();
+  it("fetchComments returns limited comments", async () => {
+    const mockComments = [
+      { postId: 1, id: 1, name: "A", email: "a@test.com", body: "comment1" },
+      { postId: 1, id: 2, name: "B", email: "b@test.com", body: "comment2" },
+      { postId: 1, id: 3, name: "C", email: "c@test.com", body: "comment3" },
+    ];
 
-    const comments = await api.fetchComments(1, 3);
+    global.fetch = vi.fn(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockComments),
+      }),
+    ) as any;
 
-    expect(comments.length).toBe(3);
-    expect(comments[0]).toHaveProperty("email");
+    const result = await api.fetchComments(1, 2);
+
+    expect(result.length).toBe(2);
+  });
+
+  it("fetchPost throws error if request fails", async () => {
+    global.fetch = vi.fn(() =>
+      Promise.resolve({
+        ok: false,
+      }),
+    ) as any;
+
+    const promise = api.fetchPost(1);
+
+    await expect(promise).rejects.toThrow();
   });
 });

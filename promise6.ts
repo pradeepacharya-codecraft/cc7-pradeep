@@ -6,7 +6,7 @@
 
 // Implement a simple vitest based test for the above.
 
-import { delay } from "./promise5.ts";
+import { delay as sleep } from "./promise5.ts";
 
 type Geo = {
   lat: string;
@@ -38,11 +38,11 @@ export type User = {
   company: Company;
 };
 
-export async function getUsers(delayy = 2000): Promise<User[]> {
+export async function getUsers(delay = 2000): Promise<User[]> {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
-    await delay(delayy);
+    await sleep(delay);
 
     return response.json();
   } catch (error) {

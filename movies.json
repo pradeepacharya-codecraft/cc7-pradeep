@@ -54,24 +54,13 @@
   {
     "title": "The Resurrection of Gavin Stone",
     "year": 2017,
-    "cast": [
-      "Brett Dalton",
-      "Anjelah Johnson",
-      "Neil Flynn",
-      "Shawn Michaels",
-      "D. B. Sweeney"
-    ],
+    "cast": ["Brett Dalton", "Anjelah Johnson", "Neil Flynn", "Shawn Michaels", "D. B. Sweeney"],
     "genres": ["Comedy", "Drama"]
   },
   {
     "title": "Trespass Against Us",
     "year": 2017,
-    "cast": [
-      "Michael Fassbender",
-      "Brendan Gleeson",
-      "Lyndsey Marshal",
-      "Killian Scott"
-    ],
+    "cast": ["Michael Fassbender", "Brendan Gleeson", "Lyndsey Marshal", "Killian Scott"],
     "genres": ["Crime", "Drama", "Thriller"]
   },
   {
@@ -89,13 +78,7 @@
   {
     "title": "A Dog's Purpose",
     "year": 2017,
-    "cast": [
-      "Britt Robertson",
-      "Dennis Quaid",
-      "Josh Gad",
-      "Peggy Lipton",
-      "Juliet Rylance"
-    ],
+    "cast": ["Britt Robertson", "Dennis Quaid", "Josh Gad", "Peggy Lipton", "Juliet Rylance"],
     "genres": ["Family"]
   },
   {
@@ -130,23 +113,13 @@
   {
     "title": "I Am Michael",
     "year": 2017,
-    "cast": [
-      "James Franco",
-      "Zachary Quinto",
-      "Emma Roberts",
-      "Charlie Carver"
-    ],
+    "cast": ["James Franco", "Zachary Quinto", "Emma Roberts", "Charlie Carver"],
     "genres": ["Biography", "Drama"]
   },
   {
     "title": "iBoy",
     "year": 2017,
-    "cast": [
-      "Bill Milner",
-      "Maisie Williams",
-      "Miranda Richardson",
-      "Rory Kinnear"
-    ],
+    "cast": ["Bill Milner", "Maisie Williams", "Miranda Richardson", "Rory Kinnear"],
     "genres": ["Action", "Crime"]
   },
   {
@@ -168,13 +141,7 @@
   {
     "title": "The Space Between Us",
     "year": 2017,
-    "cast": [
-      "Asa Butterfield",
-      "Britt Robertson",
-      "Gary Oldman",
-      "Carla Gugino",
-      "B. D. Wong"
-    ],
+    "cast": ["Asa Butterfield", "Britt Robertson", "Gary Oldman", "Carla Gugino", "B. D. Wong"],
     "genres": ["Science Fiction", "Adventure", "Romance"]
   },
   {
@@ -200,13 +167,7 @@
   {
     "title": "Growing Up Smith",
     "year": 2017,
-    "cast": [
-      "Jason Lee",
-      "Anjul Nigam",
-      "Brighton Sharbino",
-      "Hilarie Burton",
-      "Roni Akurati"
-    ],
+    "cast": ["Jason Lee", "Anjul Nigam", "Brighton Sharbino", "Hilarie Burton", "Roni Akurati"],
     "genres": ["Comedy"]
   },
   {
@@ -332,12 +293,7 @@
   {
     "title": "XX",
     "year": 2017,
-    "cast": [
-      "Natalie Brown",
-      "Melanie Lynskey",
-      "Breeda Wool",
-      "Christina Kirk"
-    ],
+    "cast": ["Natalie Brown", "Melanie Lynskey", "Breeda Wool", "Christina Kirk"],
     "genres": ["Horror", "Suspense"]
   },
   {
@@ -385,35 +341,19 @@
   {
     "title": "Collide",
     "year": 2017,
-    "cast": [
-      "Nicholas Hoult",
-      "Felicity Jones",
-      "Anthony Hopkins",
-      "Ben Kingsley"
-    ],
+    "cast": ["Nicholas Hoult", "Felicity Jones", "Anthony Hopkins", "Ben Kingsley"],
     "genres": ["Action", "Crime", "Drama"]
   },
   {
     "title": "The Girl with All the Gifts",
     "year": 2017,
-    "cast": [
-      "Gemma Arterton",
-      "Glenn Close",
-      "Paddy Considine",
-      "Sennia Nanua"
-    ],
+    "cast": ["Gemma Arterton", "Glenn Close", "Paddy Considine", "Sennia Nanua"],
     "genres": ["Horror"]
   },
   {
     "title": "I Don't Feel at Home in This World Anymore",
     "year": 2017,
-    "cast": [
-      "Melanie Lynskey",
-      "Elijah Wood",
-      "David Yow",
-      "Jane Levy",
-      "Devon Graye"
-    ],
+    "cast": ["Melanie Lynskey", "Elijah Wood", "David Yow", "Jane Levy", "Devon Graye"],
     "genres": ["Comedy", "Thriller"]
   },
   {
@@ -441,12 +381,7 @@
   {
     "title": "The Shack",
     "year": 2017,
-    "cast": [
-      "Sam Worthington",
-      "Radha Mitchell",
-      "Octavia Spencer",
-      "Graham Greene"
-    ],
+    "cast": ["Sam Worthington", "Radha Mitchell", "Octavia Spencer", "Graham Greene"],
     "genres": ["Drama"]
   },
   {
@@ -502,12 +437,7 @@
   {
     "title": "Donald Cried",
     "year": 2017,
-    "cast": [
-      "Kristopher Avedisian",
-      "Jesse Wakeman",
-      "Louisa Krause",
-      "Ted Arcidi"
-    ],
+    "cast": ["Kristopher Avedisian", "Jesse Wakeman", "Louisa Krause", "Ted Arcidi"],
     "genres": ["Comedy"]
   },
   {
@@ -533,13 +463,7 @@
   {
     "title": "Burning Sands",
     "year": 2017,
-    "cast": [
-      "Trevor Jackson",
-      "Alfre Woodard",
-      "Steve Harris",
-      "Trevante Rhodes",
-      "Serayah"
-    ],
+    "cast": ["Trevor Jackson", "Alfre Woodard", "Steve Harris", "Trevante Rhodes", "Serayah"],
     "genres": ["Drama"]
   },
   {
@@ -590,13 +514,7 @@
   {
     "title": "All Nighter",
     "year": 2017,
-    "cast": [
-      "J. K. Simmons",
-      "Emile Hirsch",
-      "Analeigh Tipton",
-      "Taran Killam",
-      "Kristen Schaal"
-    ],
+    "cast": ["J. K. Simmons", "Emile Hirsch", "Analeigh Tipton", "Taran Killam", "Kristen Schaal"],
     "genres": ["Comedy"]
   },
   {
@@ -630,12 +548,7 @@
   {
     "title": "Life",
     "year": 2017,
-    "cast": [
-      "Rebecca Ferguson",
-      "Jake Gyllenhaal",
-      "Ryan Reynolds",
-      "Hiroyuki Sanada"
-    ],
+    "cast": ["Rebecca Ferguson", "Jake Gyllenhaal", "Ryan Reynolds", "Hiroyuki Sanada"],
     "genres": ["Horror", "Science Fiction"]
   },
   {
@@ -730,48 +643,25 @@
   {
     "title": "The Boss Baby",
     "year": 2017,
-    "cast": [
-      "Alec Baldwin",
-      "Steve Buscemi",
-      "Tobey Maguire",
-      "Jimmy Kimmel",
-      "Lisa Kudrow"
-    ],
+    "cast": ["Alec Baldwin", "Steve Buscemi", "Tobey Maguire", "Jimmy Kimmel", "Lisa Kudrow"],
     "genres": ["Animated", "Comedy"]
   },
   {
     "title": "The Zookeeper's Wife",
     "year": 2017,
-    "cast": [
-      "Jessica Chastain",
-      "Johan Heldenbergh",
-      "Daniel Brühl",
-      "Michael McElhatton"
-    ],
+    "cast": ["Jessica Chastain", "Johan Heldenbergh", "Daniel Brühl", "Michael McElhatton"],
     "genres": ["War", "Drama"]
   },
   {
     "title": "The Blackcoat's Daughter",
     "year": 2017,
-    "cast": [
-      "Emma Roberts",
-      "Kiernan Shipka",
-      "Lucy Boynton",
-      "Lauren Holly",
-      "James Remar"
-    ],
+    "cast": ["Emma Roberts", "Kiernan Shipka", "Lucy Boynton", "Lauren Holly", "James Remar"],
     "genres": ["Horror", "Thriller"]
   },
   {
     "title": "The Discovery",
     "year": 2017,
-    "cast": [
-      "Jason Segel",
-      "Rooney Mara",
-      "Robert Redford",
-      "Jesse Plemons",
-      "Riley Keough"
-    ],
+    "cast": ["Jason Segel", "Rooney Mara", "Robert Redford", "Jesse Plemons", "Riley Keough"],
     "genres": ["Romance", "Drama", "Science Fiction"]
   },
   {
@@ -791,13 +681,7 @@
   {
     "title": "The Case for Christ",
     "year": 2017,
-    "cast": [
-      "Mike Vogel",
-      "Erika Christensen",
-      "Robert Forster",
-      "Faye Dunaway",
-      "Grant Goodeve"
-    ],
+    "cast": ["Mike Vogel", "Erika Christensen", "Robert Forster", "Faye Dunaway", "Grant Goodeve"],
     "genres": ["Drama"]
   },
   {
@@ -846,24 +730,13 @@
   {
     "title": "Gifted",
     "year": 2017,
-    "cast": [
-      "Chris Evans",
-      "Mckenna Grace",
-      "Jenny Slate",
-      "Lindsay Duncan",
-      "Octavia Spencer"
-    ],
+    "cast": ["Chris Evans", "Mckenna Grace", "Jenny Slate", "Lindsay Duncan", "Octavia Spencer"],
     "genres": ["Drama"]
   },
   {
     "title": "Aftermath",
     "year": 2017,
-    "cast": [
-      "Arnold Schwarzenegger",
-      "Scoot McNairy",
-      "Maggie Grace",
-      "Martin Donovan"
-    ],
+    "cast": ["Arnold Schwarzenegger", "Scoot McNairy", "Maggie Grace", "Martin Donovan"],
     "genres": ["Drama", "Thriller"]
   },
   {
@@ -889,24 +762,13 @@
   {
     "title": "Spark",
     "year": 2017,
-    "cast": [
-      "Jace Norman",
-      "Jessica Biel",
-      "Susan Sarandon",
-      "Patrick Stewart",
-      "Hilary Swank"
-    ],
+    "cast": ["Jace Norman", "Jessica Biel", "Susan Sarandon", "Patrick Stewart", "Hilary Swank"],
     "genres": ["Science Fiction", "Animated", "Comedy"]
   },
   {
     "title": "The Lost City of Z",
     "year": 2017,
-    "cast": [
-      "Charlie Hunnam",
-      "Robert Pattinson",
-      "Tom Holland",
-      "Sienna Miller"
-    ],
+    "cast": ["Charlie Hunnam", "Robert Pattinson", "Tom Holland", "Sienna Miller"],
     "genres": ["Adventure", "Drama"]
   },
   {
@@ -1168,12 +1030,7 @@
   {
     "title": "Wakefield",
     "year": 2017,
-    "cast": [
-      "Bryan Cranston",
-      "Jennifer Garner",
-      "Victoria Bruno",
-      "Pippa Bennett-Warner"
-    ],
+    "cast": ["Bryan Cranston", "Jennifer Garner", "Victoria Bruno", "Pippa Bennett-Warner"],
     "genres": ["Drama"]
   },
   {
@@ -1322,13 +1179,7 @@
   {
     "title": "Megan Leavey",
     "year": 2017,
-    "cast": [
-      "Kate Mara",
-      "Edie Falco",
-      "Common",
-      "Ramón Rodríguez",
-      "Tom Felton"
-    ],
+    "cast": ["Kate Mara", "Edie Falco", "Common", "Ramón Rodríguez", "Tom Felton"],
     "genres": ["Biography", "War"]
   },
   {
@@ -1380,13 +1231,7 @@
   {
     "title": "All Eyez on Me",
     "year": 2017,
-    "cast": [
-      "Demetrius Shipp Jr.",
-      "Kat Graham",
-      "Lauren Cohan",
-      "Hill Harper",
-      "Danai Gurira"
-    ],
+    "cast": ["Demetrius Shipp Jr.", "Kat Graham", "Lauren Cohan", "Hill Harper", "Danai Gurira"],
     "genres": ["Biography", "Drama"]
   },
   {
@@ -1552,12 +1397,7 @@
   {
     "title": "Inconceivable",
     "year": 2017,
-    "cast": [
-      "Nicolas Cage",
-      "Faye Dunaway",
-      "Gina Gershon",
-      "Natalie Eva Marie"
-    ],
+    "cast": ["Nicolas Cage", "Faye Dunaway", "Gina Gershon", "Natalie Eva Marie"],
     "genres": ["Drama", "Thriller"]
   },
   {
@@ -1601,13 +1441,7 @@
   {
     "title": "War for the Planet of the Apes",
     "year": 2017,
-    "cast": [
-      "Andy Serkis",
-      "Gabriel Chavarria",
-      "Woody Harrelson",
-      "Judy Greer",
-      "Steve Zahn"
-    ],
+    "cast": ["Andy Serkis", "Gabriel Chavarria", "Woody Harrelson", "Judy Greer", "Steve Zahn"],
     "genres": ["Science Fiction", "Adventure", "Drama", "Action"]
   },
   {
@@ -1753,12 +1587,7 @@
   {
     "title": "Menashe",
     "year": 2017,
-    "cast": [
-      "Menashe Lustig",
-      "Ruben Nidorski",
-      "Yoel Weisshaus",
-      "Meyer Schwartz"
-    ],
+    "cast": ["Menashe Lustig", "Ruben Nidorski", "Yoel Weisshaus", "Meyer Schwartz"],
     "genres": ["Drama"]
   },
   {
@@ -1773,14 +1602,7 @@
       "Jackie Earle Haley",
       "Claudia Kim"
     ],
-    "genres": [
-      "Action",
-      "Fantasy",
-      "Adventure",
-      "Horror",
-      "Science Fiction",
-      "Western"
-    ]
+    "genres": ["Action", "Fantasy", "Adventure", "Horror", "Science Fiction", "Western"]
   },
   {
     "title": "Kidnap",
@@ -1791,13 +1613,7 @@
   {
     "title": "Step",
     "year": 2017,
-    "cast": [
-      "Blessin Giraldo",
-      "Cori Grainger",
-      "Tayla Solomon",
-      "Gari McIntyre",
-      "Paula Dofat"
-    ],
+    "cast": ["Blessin Giraldo", "Cori Grainger", "Tayla Solomon", "Gari McIntyre", "Paula Dofat"],
     "genres": ["Documentary"]
   },
   {
@@ -1901,13 +1717,7 @@
   {
     "title": "The Hitman's Bodyguard",
     "year": 2017,
-    "cast": [
-      "Ryan Reynolds",
-      "Samuel L. Jackson",
-      "Gary Oldman",
-      "Élodie Yung",
-      "Salma Hayek"
-    ],
+    "cast": ["Ryan Reynolds", "Samuel L. Jackson", "Gary Oldman", "Élodie Yung", "Salma Hayek"],
     "genres": ["Action", "Comedy"]
   },
   {
@@ -2018,12 +1828,7 @@
   {
     "title": "The Good Catholic",
     "year": 2017,
-    "cast": [
-      "Zachary Spicer",
-      "Wrenn Schmidt",
-      "John C. McGinley",
-      "Danny Glover"
-    ],
+    "cast": ["Zachary Spicer", "Wrenn Schmidt", "John C. McGinley", "Danny Glover"],
     "genres": ["Comedy"]
   },
   {
@@ -2035,13 +1840,7 @@
   {
     "title": "American Assassin",
     "year": 2017,
-    "cast": [
-      "Dylan O'Brien",
-      "Michael Keaton",
-      "Sanaa Lathan",
-      "Shiva Negar",
-      "Taylor Kitsch"
-    ],
+    "cast": ["Dylan O'Brien", "Michael Keaton", "Sanaa Lathan", "Shiva Negar", "Taylor Kitsch"],
     "genres": ["Action", "Thriller"]
   },
   {
@@ -2060,13 +1859,7 @@
   {
     "title": "Brad's Status",
     "year": 2017,
-    "cast": [
-      "Ben Stiller",
-      "Michael Sheen",
-      "Luke Wilson",
-      "Jemaine Clement",
-      "Jenna Fischer"
-    ],
+    "cast": ["Ben Stiller", "Michael Sheen", "Luke Wilson", "Jemaine Clement", "Jenna Fischer"],
     "genres": ["Comedy"]
   },
   {
@@ -2103,12 +1896,7 @@
   {
     "title": "Stronger",
     "year": 2017,
-    "cast": [
-      "Jake Gyllenhaal",
-      "Tatiana Maslany",
-      "Miranda Richardson",
-      "Clancy Brown"
-    ],
+    "cast": ["Jake Gyllenhaal", "Tatiana Maslany", "Miranda Richardson", "Clancy Brown"],
     "genres": ["Biography", "Drama"]
   },
   {
@@ -2128,25 +1916,13 @@
   {
     "title": "Woodshock",
     "year": 2017,
-    "cast": [
-      "Kirsten Dunst",
-      "Joe Cole",
-      "Pilou Asbæk",
-      "Lorelei Linklater",
-      "Jack Kilmer"
-    ],
+    "cast": ["Kirsten Dunst", "Joe Cole", "Pilou Asbæk", "Lorelei Linklater", "Jack Kilmer"],
     "genres": ["Drama"]
   },
   {
     "title": "Victoria & Abdul",
     "year": 2017,
-    "cast": [
-      "Judi Dench",
-      "Ali Fazal",
-      "Eddie Izzard",
-      "Tim Pigott-Smith",
-      "Adeel Akhtar"
-    ],
+    "cast": ["Judi Dench", "Ali Fazal", "Eddie Izzard", "Tim Pigott-Smith", "Adeel Akhtar"],
     "genres": ["Biography", "Drama"]
   },
   {
@@ -2169,22 +1945,8 @@
   {
     "title": "American Made",
     "year": 2017,
-    "cast": [
-      "Tom Cruise",
-      "Domhnall Gleeson",
-      "Sarah Wright",
-      "Jayma Mays",
-      "Jesse Plemons"
-    ],
-    "genres": [
-      "Biography",
-      "Action",
-      "Comedy",
-      "Crime",
-      "Drama",
-      "Historical",
-      "Thriller"
-    ]
+    "cast": ["Tom Cruise", "Domhnall Gleeson", "Sarah Wright", "Jayma Mays", "Jesse Plemons"],
+    "genres": ["Biography", "Action", "Comedy", "Crime", "Drama", "Historical", "Thriller"]
   },
   {
     "title": "Flatliners",
@@ -2259,14 +2021,7 @@
       "Sia",
       "Zoe Saldana"
     ],
-    "genres": [
-      "Animated",
-      "Adventure",
-      "Comedy",
-      "Family",
-      "Fantasy",
-      "Musical"
-    ]
+    "genres": ["Animated", "Adventure", "Comedy", "Family", "Fantasy", "Musical"]
   },
   {
     "title": "The Florida Project",
@@ -2328,24 +2083,13 @@
   {
     "title": "Professor Marston and the Wonder Women",
     "year": 2017,
-    "cast": [
-      "Luke Evans",
-      "Rebecca Hall",
-      "Bella Heathcote",
-      "Connie Britton",
-      "Oliver Platt"
-    ],
+    "cast": ["Luke Evans", "Rebecca Hall", "Bella Heathcote", "Connie Britton", "Oliver Platt"],
     "genres": ["Biography", "Drama"]
   },
   {
     "title": "Blood Money",
     "year": 2017,
-    "cast": [
-      "John Cusack",
-      "Ellar Coltrane",
-      "Willa Fitzgerald",
-      "Jacob Artist"
-    ],
+    "cast": ["John Cusack", "Ellar Coltrane", "Willa Fitzgerald", "Jacob Artist"],
     "genres": ["Drama", "Crime"]
   },
   {
@@ -2452,13 +2196,7 @@
   {
     "title": "Thank You for Your Service",
     "year": 2017,
-    "cast": [
-      "Miles Teller",
-      "Haley Bennett",
-      "Beulah Koale",
-      "Amy Schumer",
-      "Scott Haze"
-    ],
+    "cast": ["Miles Teller", "Haley Bennett", "Beulah Koale", "Amy Schumer", "Scott Haze"],
     "genres": ["Biography", "War", "Drama"]
   },
   {
@@ -2498,13 +2236,7 @@
   {
     "title": "All I See Is You",
     "year": 2017,
-    "cast": [
-      "Blake Lively",
-      "Jason Clarke",
-      "Yvonne Strahovski",
-      "Danny Huston",
-      "Wes Chatham"
-    ],
+    "cast": ["Blake Lively", "Jason Clarke", "Yvonne Strahovski", "Danny Huston", "Wes Chatham"],
     "genres": ["Drama", "Thriller"]
   },
   {
@@ -2534,14 +2266,7 @@
       "Mark Ruffalo",
       "Anthony Hopkins"
     ],
-    "genres": [
-      "Superhero",
-      "Action",
-      "Adventure",
-      "Fantasy",
-      "Science Fiction",
-      "Comedy"
-    ]
+    "genres": ["Superhero", "Action", "Adventure", "Fantasy", "Science Fiction", "Comedy"]
   },
   {
     "title": "A Bad Moms Christmas",
@@ -2559,12 +2284,7 @@
   {
     "title": "Last Flag Flying",
     "year": 2017,
-    "cast": [
-      "Steve Carell",
-      "Bryan Cranston",
-      "Laurence Fishburne",
-      "Yul Vazquez"
-    ],
+    "cast": ["Steve Carell", "Bryan Cranston", "Laurence Fishburne", "Yul Vazquez"],
     "genres": ["Comedy", "Drama"]
   },
   {
@@ -2696,12 +2416,7 @@
   {
     "title": "Wonder",
     "year": 2017,
-    "cast": [
-      "Julia Roberts",
-      "Jacob Tremblay",
-      "Owen Wilson",
-      "Mandy Patinkin"
-    ],
+    "cast": ["Julia Roberts", "Jacob Tremblay", "Owen Wilson", "Mandy Patinkin"],
     "genres": ["Drama"]
   },
   {
@@ -2738,12 +2453,7 @@
   {
     "title": "Roman J. Israel, Esq.",
     "year": 2017,
-    "cast": [
-      "Denzel Washington",
-      "Colin Farrell",
-      "Carmen Ejogo",
-      "Shelley Hennig"
-    ],
+    "cast": ["Denzel Washington", "Colin Farrell", "Carmen Ejogo", "Shelley Hennig"],
     "genres": ["Drama"]
   },
   {
@@ -2822,13 +2532,7 @@
   {
     "title": "Wonder Wheel",
     "year": 2017,
-    "cast": [
-      "Kate Winslet",
-      "Justin Timberlake",
-      "Juno Temple",
-      "Jim Belushi",
-      "Tony Sirico"
-    ],
+    "cast": ["Kate Winslet", "Justin Timberlake", "Juno Temple", "Jim Belushi", "Tony Sirico"],
     "genres": ["Crime", "Drama"]
   },
   {
@@ -2908,13 +2612,7 @@
   {
     "title": "Jumanji: Welcome to the Jungle",
     "year": 2017,
-    "cast": [
-      "Dwayne Johnson",
-      "Kevin Hart",
-      "Jack Black",
-      "Nick Jonas",
-      "Karen Gillan"
-    ],
+    "cast": ["Dwayne Johnson", "Kevin Hart", "Jack Black", "Nick Jonas", "Karen Gillan"],
     "genres": ["Action", "Fantasy", "Adventure", "Comedy"]
   },
   {
@@ -2989,13 +2687,7 @@
   {
     "title": "Bright",
     "year": 2017,
-    "cast": [
-      "Will Smith",
-      "Joel Edgerton",
-      "Noomi Rapace",
-      "Lucy Fry",
-      "Edgar Ramirez"
-    ],
+    "cast": ["Will Smith", "Joel Edgerton", "Noomi Rapace", "Lucy Fry", "Edgar Ramirez"],
     "genres": ["Action", "Fantasy", "Science Fiction"]
   },
   {
@@ -3056,12 +2748,7 @@
   {
     "title": "Phantom Thread",
     "year": 2017,
-    "cast": [
-      "Daniel Day-Lewis",
-      "Lesley Manville",
-      "Richard Graham",
-      "Vicky Krieps"
-    ],
+    "cast": ["Daniel Day-Lewis", "Lesley Manville", "Richard Graham", "Vicky Krieps"],
     "genres": ["Drama"]
   },
   {
@@ -3126,13 +2813,7 @@
   {
     "title": "Acts of Violence",
     "year": 2018,
-    "cast": [
-      "Bruce Willis",
-      "Cole Hauser",
-      "Shawn Ashmore",
-      "Melissa Bolona",
-      "Mike Epps"
-    ],
+    "cast": ["Bruce Willis", "Cole Hauser", "Shawn Ashmore", "Melissa Bolona", "Mike Epps"],
     "genres": ["Action", "Thriller"]
   },
   {
@@ -3502,13 +3183,7 @@
   {
     "title": "The Vanishing of Sidney Hall",
     "year": 2018,
-    "cast": [
-      "Logan Lerman",
-      "Elle Fanning",
-      "Michelle Monaghan",
-      "Nathan Lane",
-      "Kyle Chandler"
-    ],
+    "cast": ["Logan Lerman", "Elle Fanning", "Michelle Monaghan", "Nathan Lane", "Kyle Chandler"],
     "genres": ["Drama", "Mystery"]
   },
   {
@@ -3544,36 +3219,19 @@
   {
     "title": "Thoroughbreds",
     "year": 2018,
-    "cast": [
-      "Olivia Cooke",
-      "Anya Taylor-Joy",
-      "Anton Yelchin",
-      "Paul Sparks",
-      "Francie Swift"
-    ],
+    "cast": ["Olivia Cooke", "Anya Taylor-Joy", "Anton Yelchin", "Paul Sparks", "Francie Swift"],
     "genres": ["Drama", "Thriller"]
   },
   {
     "title": "The Hurricane Heist",
     "year": 2018,
-    "cast": [
-      "Toby Kebbell",
-      "Maggie Grace",
-      "Ryan Kwanten",
-      "Melissa Bolona",
-      "Ralph Ineson"
-    ],
+    "cast": ["Toby Kebbell", "Maggie Grace", "Ryan Kwanten", "Melissa Bolona", "Ralph Ineson"],
     "genres": ["Disaster", "Thriller"]
   },
   {
     "title": "The Strangers: Prey at Night",
     "year": 2018,
-    "cast": [
-      "Christina Hendricks",
-      "Martin Henderson",
-      "Bailee Madison",
-      "Lewis Pullman"
-    ],
+    "cast": ["Christina Hendricks", "Martin Henderson", "Bailee Madison", "Lewis Pullman"],
     "genres": ["Horror", "Thriller"]
   },
   {
@@ -3624,25 +3282,13 @@
   {
     "title": "7 Days in Entebbe",
     "year": 2018,
-    "cast": [
-      "Rosamund Pike",
-      "Daniel Bruhl",
-      "Vincent Cassel",
-      "Eddie Marsan",
-      "Ben Schnetzer"
-    ],
+    "cast": ["Rosamund Pike", "Daniel Bruhl", "Vincent Cassel", "Eddie Marsan", "Ben Schnetzer"],
     "genres": ["Action", "Thriller"]
   },
   {
     "title": "Furlough",
     "year": 2018,
-    "cast": [
-      "Melissa Leo",
-      "Tessa Thompson",
-      "La La Anthony",
-      "Whoopi Goldberg",
-      "Anna Paquin"
-    ],
+    "cast": ["Melissa Leo", "Tessa Thompson", "La La Anthony", "Whoopi Goldberg", "Anna Paquin"],
     "genres": ["Drama", "Comedy"]
   },
   {
@@ -3654,13 +3300,7 @@
   {
     "title": "Flower",
     "year": 2018,
-    "cast": [
-      "Zoey Deutch",
-      "Kathryn Hahn",
-      "Tim Heidecker",
-      "Joey Morgan",
-      "Adam Scott"
-    ],
+    "cast": ["Zoey Deutch", "Kathryn Hahn", "Tim Heidecker", "Joey Morgan", "Adam Scott"],
     "genres": ["Comedy"]
   },
   {
@@ -3736,13 +3376,7 @@
   {
     "title": "Paul, Apostle of Christ",
     "year": 2018,
-    "cast": [
-      "James Faulkner",
-      "Jim Caviezel",
-      "Olivier Martinez",
-      "Joanne Whalley",
-      "John Lynch"
-    ],
+    "cast": ["James Faulkner", "Jim Caviezel", "Olivier Martinez", "Joanne Whalley", "John Lynch"],
     "genres": ["Historical", "Drama"]
   },
   {
@@ -3761,12 +3395,7 @@
   {
     "title": "Midnight Sun",
     "year": 2018,
-    "cast": [
-      "Bella Thorne",
-      "Patrick Schwarzenegger",
-      "Rob Riggle",
-      "Quinn Shephard"
-    ],
+    "cast": ["Bella Thorne", "Patrick Schwarzenegger", "Rob Riggle", "Quinn Shephard"],
     "genres": ["Romance", "Drama"]
   },
   {
@@ -3841,24 +3470,13 @@
   {
     "title": "The Last Movie Star",
     "year": 2018,
-    "cast": [
-      "Burt Reynolds",
-      "Ariel Winter",
-      "Clark Duke",
-      "Ellar Coltrane",
-      "Chevy Chase"
-    ],
+    "cast": ["Burt Reynolds", "Ariel Winter", "Clark Duke", "Ellar Coltrane", "Chevy Chase"],
     "genres": ["Drama"]
   },
   {
     "title": "A Quiet Place",
     "year": 2018,
-    "cast": [
-      "John Krasinski",
-      "Emily Blunt",
-      "Millicent Simmonds",
-      "Noah Jupe"
-    ],
+    "cast": ["John Krasinski", "Emily Blunt", "Millicent Simmonds", "Noah Jupe"],
     "genres": ["Drama", "Horror", "Thriller"]
   },
   {
@@ -3968,12 +3586,7 @@
   {
     "title": "I Feel Pretty",
     "year": 2018,
-    "cast": [
-      "Amy Schumer",
-      "Michelle Williams",
-      "Emily Ratajkowski",
-      "Rory Scovel"
-    ],
+    "cast": ["Amy Schumer", "Michelle Williams", "Emily Ratajkowski", "Rory Scovel"],
     "genres": ["Comedy"]
   },
   {
@@ -4005,13 +3618,7 @@
   {
     "title": "The House of Tomorrow",
     "year": 2018,
-    "cast": [
-      "Asa Butterfield",
-      "Nick Offerman",
-      "Ellen Burstyn",
-      "Alex Wolff",
-      "Maude Apatow"
-    ],
+    "cast": ["Asa Butterfield", "Nick Offerman", "Ellen Burstyn", "Alex Wolff", "Maude Apatow"],
     "genres": ["Drama"]
   },
   {
@@ -4090,12 +3697,7 @@
   {
     "title": "Tully",
     "year": 2018,
-    "cast": [
-      "Charlize Theron",
-      "Mackenzie Davis",
-      "Mark Duplass",
-      "Ron Livingston"
-    ],
+    "cast": ["Charlize Theron", "Mackenzie Davis", "Mark Duplass", "Ron Livingston"],
     "genres": ["Comedy", "Drama"]
   },
   {
@@ -4148,13 +3750,7 @@
   {
     "title": "Terminal",
     "year": 2018,
-    "cast": [
-      "Margot Robbie",
-      "Simon Pegg",
-      "Dexter Fletcher",
-      "Max Irons",
-      "Mike Myers"
-    ],
+    "cast": ["Margot Robbie", "Simon Pegg", "Dexter Fletcher", "Max Irons", "Mike Myers"],
     "genres": ["Drama", "Thriller"]
   },
   {
@@ -4184,12 +3780,7 @@
   {
     "title": "Book Club",
     "year": 2018,
-    "cast": [
-      "Jane Fonda",
-      "Candice Bergen",
-      "Mary Steenburgen",
-      "Diane Keaton"
-    ],
+    "cast": ["Jane Fonda", "Candice Bergen", "Mary Steenburgen", "Diane Keaton"],
     "genres": ["Comedy"]
   },
   {
@@ -4238,13 +3829,7 @@
   {
     "title": "How to Talk to Girls at Parties",
     "year": 2018,
-    "cast": [
-      "Elle Fanning",
-      "Alex Sharp",
-      "Nicole Kidman",
-      "Ruth Wilson",
-      "Matt Lucas"
-    ],
+    "cast": ["Elle Fanning", "Alex Sharp", "Nicole Kidman", "Ruth Wilson", "Matt Lucas"],
     "genres": ["Science Fiction", "Romance", "Comedy"]
   },
   {
@@ -4292,12 +3877,7 @@
   {
     "title": "Upgrade",
     "year": 2018,
-    "cast": [
-      "Logan Marshall-Green",
-      "Betty Gabriel",
-      "Harrison Gilbertson",
-      "Benedict Hardie"
-    ],
+    "cast": ["Logan Marshall-Green", "Betty Gabriel", "Harrison Gilbertson", "Benedict Hardie"],
     "genres": ["Science Fiction", "Horror", "Action"]
   },
   {
@@ -4350,13 +3930,7 @@
   {
     "title": "Hereditary",
     "year": 2018,
-    "cast": [
-      "Toni Collette",
-      "Alex Wolff",
-      "Milly Shapiro",
-      "Ann Dowd",
-      "Gabriel Byrne"
-    ],
+    "cast": ["Toni Collette", "Alex Wolff", "Milly Shapiro", "Ann Dowd", "Gabriel Byrne"],
     "genres": ["Horror"]
   },
   {
@@ -4378,12 +3952,7 @@
   {
     "title": "Superfly",
     "year": 2018,
-    "cast": [
-      "Trevor Jackson",
-      "Jason Mitchell",
-      "Michael K. Williams",
-      "Esai Morales"
-    ],
+    "cast": ["Trevor Jackson", "Jason Mitchell", "Michael K. Williams", "Esai Morales"],
     "genres": ["Crime", "Drama"]
   },
   {
@@ -4542,24 +4111,13 @@
   {
     "title": "Woman Walks Ahead",
     "year": 2018,
-    "cast": [
-      "Jessica Chastain",
-      "Michael Greyeyes",
-      "Chaske Spencer",
-      "Sam Rockwell"
-    ],
+    "cast": ["Jessica Chastain", "Michael Greyeyes", "Chaske Spencer", "Sam Rockwell"],
     "genres": ["Biography", "Drama"]
   },
   {
     "title": "The First Purge",
     "year": 2018,
-    "cast": [
-      "Y'lan Noel",
-      "Lex Scott Davis",
-      "Joivan Wade",
-      "Luna Lauren Velez",
-      "Marisa Tomei"
-    ],
+    "cast": ["Y'lan Noel", "Lex Scott Davis", "Joivan Wade", "Luna Lauren Velez", "Marisa Tomei"],
     "genres": ["Horror", "Science Fiction"]
   },
   {
@@ -4691,25 +4249,13 @@
   {
     "title": "The Equalizer 2",
     "year": 2018,
-    "cast": [
-      "Denzel Washington",
-      "Ashton Sanders",
-      "Pedro Pascal",
-      "Melissa Leo",
-      "Bill Pullman"
-    ],
+    "cast": ["Denzel Washington", "Ashton Sanders", "Pedro Pascal", "Melissa Leo", "Bill Pullman"],
     "genres": ["Action", "Crime", "Thriller"]
   },
   {
     "title": "Blindspotting",
     "year": 2018,
-    "cast": [
-      "Janina Gavankar",
-      "Ethan Embry",
-      "Daveed Diggs",
-      "Rafael Casal",
-      "Wayne Knight"
-    ],
+    "cast": ["Janina Gavankar", "Ethan Embry", "Daveed Diggs", "Rafael Casal", "Wayne Knight"],
     "genres": ["Comedy"]
   },
   {
@@ -4865,13 +4411,7 @@
   {
     "title": "Dog Days",
     "year": 2018,
-    "cast": [
-      "Nina Dobrev",
-      "Finn Wolfhard",
-      "Vanessa Hudgens",
-      "Adam Pally",
-      "Eva Longoria"
-    ],
+    "cast": ["Nina Dobrev", "Finn Wolfhard", "Vanessa Hudgens", "Adam Pally", "Eva Longoria"],
     "genres": ["Comedy"]
   },
   {
@@ -4890,24 +4430,13 @@
   {
     "title": "BlacKkKlansman",
     "year": 2018,
-    "cast": [
-      "John David Washington",
-      "Adam Driver",
-      "Laura Harrier",
-      "Topher Grace"
-    ],
+    "cast": ["John David Washington", "Adam Driver", "Laura Harrier", "Topher Grace"],
     "genres": ["Crime", "Drama"]
   },
   {
     "title": "Slender Man",
     "year": 2018,
-    "cast": [
-      "Joey King",
-      "Julia Goldani Telles",
-      "Jaz Sinclair",
-      "Annalise Basso",
-      "Javier Botet"
-    ],
+    "cast": ["Joey King", "Julia Goldani Telles", "Jaz Sinclair", "Annalise Basso", "Javier Botet"],
     "genres": ["Horror", "Thriller"]
   },
   {
@@ -4940,13 +4469,7 @@
   {
     "title": "Mile 22",
     "year": 2018,
-    "cast": [
-      "Mark Wahlberg",
-      "John Malkovich",
-      "Lauren Cohan",
-      "Iko Uwais",
-      "Ronda Rousey"
-    ],
+    "cast": ["Mark Wahlberg", "John Malkovich", "Lauren Cohan", "Iko Uwais", "Ronda Rousey"],
     "genres": ["Action", "Thriller"]
   },
   {
@@ -4980,12 +4503,7 @@
   {
     "title": "The Happytime Murders",
     "year": 2018,
-    "cast": [
-      "Melissa McCarthy",
-      "Maya Rudolph",
-      "Joel McHale",
-      "Elizabeth Banks"
-    ],
+    "cast": ["Melissa McCarthy", "Maya Rudolph", "Joel McHale", "Elizabeth Banks"],
     "genres": ["Comedy", "Thriller"]
   },
   {
@@ -5116,12 +4634,7 @@
   {
     "title": "A Simple Favor",
     "year": 2018,
-    "cast": [
-      "Anna Kendrick",
-      "Blake Lively",
-      "Henry Golding",
-      "Andrew Rannells"
-    ],
+    "cast": ["Anna Kendrick", "Blake Lively", "Henry Golding", "Andrew Rannells"],
     "genres": ["Thriller", "Drama", "Comedy"]
   },
   {
@@ -5191,12 +4704,7 @@
   {
     "title": "The Sisters Brothers",
     "year": 2018,
-    "cast": [
-      "John C. Reilly",
-      "Joaquin Phoenix",
-      "Jake Gyllenhaal",
-      "Riz Ahmed"
-    ],
+    "cast": ["John C. Reilly", "Joaquin Phoenix", "Jake Gyllenhaal", "Riz Ahmed"],
     "genres": ["Western", "Comedy"]
   },
   {
@@ -5315,13 +4823,7 @@
   {
     "title": "A Star Is Born",
     "year": 2018,
-    "cast": [
-      "Bradley Cooper",
-      "Lady Gaga",
-      "Andrew Dice Clay",
-      "Dave Chappelle",
-      "Sam Elliott"
-    ],
+    "cast": ["Bradley Cooper", "Lady Gaga", "Andrew Dice Clay", "Dave Chappelle", "Sam Elliott"],
     "genres": ["Romance", "Drama", "Musical"]
   },
   {
@@ -5552,13 +5054,7 @@
   {
     "title": "Nobody's Fool",
     "year": 2018,
-    "cast": [
-      "Tiffany Haddish",
-      "Tika Sumpter",
-      "Omari Hardwick",
-      "Whoopi Goldberg",
-      "Amber Riley"
-    ],
+    "cast": ["Tiffany Haddish", "Tika Sumpter", "Omari Hardwick", "Whoopi Goldberg", "Amber Riley"],
     "genres": ["Comedy"]
   },
   {
@@ -5690,13 +5186,7 @@
   {
     "title": "Instant Family",
     "year": 2018,
-    "cast": [
-      "Mark Wahlberg",
-      "Rose Byrne",
-      "Isabela Moner",
-      "Tig Notaro",
-      "Octavia Spencer"
-    ],
+    "cast": ["Mark Wahlberg", "Rose Byrne", "Isabela Moner", "Tig Notaro", "Octavia Spencer"],
     "genres": ["Comedy"]
   },
   {
@@ -5847,12 +5337,7 @@
   {
     "title": "Ben Is Back",
     "year": 2018,
-    "cast": [
-      "Lucas Hedges",
-      "Julia Roberts",
-      "Kathryn Newton",
-      "Courtney B. Vance"
-    ],
+    "cast": ["Lucas Hedges", "Julia Roberts", "Kathryn Newton", "Courtney B. Vance"],
     "genres": ["Drama"]
   },
   {
@@ -6022,13 +5507,7 @@
   {
     "title": "Destroyer",
     "year": 2018,
-    "cast": [
-      "Nicole Kidman",
-      "Tatiana Maslany",
-      "Sebastian Stan",
-      "Toby Kebbell",
-      "Scoot McNairy"
-    ],
+    "cast": ["Nicole Kidman", "Tatiana Maslany", "Sebastian Stan", "Toby Kebbell", "Scoot McNairy"],
     "genres": ["Crime", "Thriller"]
   }
 ]

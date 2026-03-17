@@ -101,14 +101,14 @@ export class LinkedList<T> {
     return false;
   }
 
-get head(): ListNode<T> | null {
-  return this.#head;
-}
+  get head(): ListNode<T> | null {
+    return this.#head;
+  }
 
-get tail(): ListNode<T> | null {
-  return this.#tail;
-}
-get length(): number {
+  get tail(): ListNode<T> | null {
+    return this.#tail;
+  }
+  get length(): number {
     return this.size;
   }
 }

@@ -1,19 +1,19 @@
-import { describe, it, expect, beforeEach } from "vitest";
-import { Stack } from "../stack";
+import { describe, it, expect, beforeEach } from 'vitest';
+import { Stack } from '../stack';
 
-describe("Stack", () => {
+describe('Stack', () => {
   let stack: Stack<number>;
 
   beforeEach(() => {
     stack = new Stack<number>();
   });
 
-  it("starts empty", () => {
+  it('starts empty', () => {
     expect(stack.length).toBe(0);
     expect(stack.top()).toBeNull();
   });
 
-  it("pushes correctly", () => {
+  it('pushes correctly', () => {
     stack.push(1);
     stack.push(2);
 
@@ -21,7 +21,7 @@ describe("Stack", () => {
     expect(stack.top()).toBe(2);
   });
 
-  it("pops correctly", () => {
+  it('pops correctly', () => {
     stack.push(10);
     stack.push(20);
 
@@ -30,7 +30,7 @@ describe("Stack", () => {
     expect(stack.pop()).toBeNull();
   });
 
-  it("returns top without removing", () => {
+  it('returns top without removing', () => {
     stack.push(5);
     stack.push(15);
 
@@ -38,11 +38,11 @@ describe("Stack", () => {
     expect(stack.length).toBe(2);
   });
 
-  it("handles empty stack", () => {
+  it('handles empty stack', () => {
     expect(stack.pop()).toBeNull();
     expect(stack.top()).toBeNull();
   });
-  it("isEmpty works correctly", () => {
+  it('isEmpty works correctly', () => {
     expect(stack.isEmpty).toBe(true);
 
     stack.push(1);
@@ -52,7 +52,7 @@ describe("Stack", () => {
     expect(stack.isEmpty).toBe(true);
   });
 
-  it("top on single element", () => {
+  it('top on single element', () => {
     stack.push(99);
 
     expect(stack.top()).toBe(99);

@@ -3,24 +3,16 @@
  let items = ['mangalore', 'semangin', '2 lonely', 'verify', 'rectify', 'mangala', 'notifyy']
 
  */
-import assert from "assert";
+import assert from 'assert';
 
-const items = [
-  "mangalore",
-  "semangin",
-  "2 lonely",
-  "verify",
-  "rectify",
-  "mangalafy",
-  "notifyy",
-];
+const items = ['mangalore', 'semangin', '2 lonely', 'verify', 'rectify', 'mangalafy', 'notifyy'];
 
 const filteredString = items.filter((item) => /^(mang.*|.*fy)$/.test(item));
 
-const expected = ["mangalore", "verify", "rectify", "mangalafy"];
+const expected = ['mangalore', 'verify', 'rectify', 'mangalafy'];
 
 assert.deepStrictEqual(
   filteredString,
   expected,
-  "Failed in filtering strings that start with 'mang' or end with 'fy'",
+  "Failed in filtering strings that start with 'mang' or end with 'fy'"
 );

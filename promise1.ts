@@ -6,24 +6,24 @@
 //  function that gets the size of the file or folder at given path
 // Test them using a console based approach by chaining them and catch methods on the returned promises.
 
-import fs from "fs";
-import { fileURLToPath } from "node:url";
-import path from "path";
+import fs from 'fs';
+import { fileURLToPath } from 'node:url';
+import path from 'path';
 
-function getFileType(path: string): Promise<"FILE" | "DIRECTORY" | "OTHER"> {
+function getFileType(path: string): Promise<'FILE' | 'DIRECTORY' | 'OTHER'> {
   return new Promise((resolve, reject) => {
     fs.stat(path, (err: NodeJS.ErrnoException | null, stats: fs.Stats) => {
       if (err) {
-        reject(new Error("file system error"));
+        reject(new Error('file system error'));
         return;
       }
 
       if (stats.isFile()) {
-        resolve("FILE");
+        resolve('FILE');
       } else if (stats.isDirectory()) {
-        resolve("DIRECTORY");
+        resolve('DIRECTORY');
       } else {
-        resolve("OTHER");
+        resolve('OTHER');
       }
     });
   });
@@ -33,12 +33,12 @@ function getContents(path: string): Promise<string | string[]> {
   return new Promise((resolve, reject) => {
     getFileType(path)
       .then((type) => {
-        if (type === "FILE") {
+        if (type === 'FILE') {
           resolve(path);
-        } else if (type === "DIRECTORY") {
+        } else if (type === 'DIRECTORY') {
           fs.readdir(path, (err, files) => {
             if (err) {
-              reject(new Error("file system error"));
+              reject(new Error('file system error'));
               return;
             }
 
@@ -57,7 +57,7 @@ function getSize(p: string): Promise<number> {
         if (!Array.isArray(contents)) {
           fs.stat(p, (err, stats) => {
             if (err) {
-              reject(new Error("file system error"));
+              reject(new Error('file system error'));
               return;
             }
 
@@ -77,7 +77,7 @@ function getSize(p: string): Promise<number> {
 
             fs.stat(fullPath, (err, stats) => {
               if (err) {
-                reject(new Error("file system error"));
+                reject(new Error('file system error'));
                 return;
               }
 
@@ -101,41 +101,41 @@ const __dirname = path.dirname(__filename);
 //file path
 getFileType(__filename)
   .then((type) => {
-    console.log("File Type:", type);
+    console.log('File Type:', type);
   })
   .catch((err) => console.log(err));
 
 //dir path
 getFileType(__dirname)
   .then((type) => {
-    console.log("File Type:", type);
+    console.log('File Type:', type);
   })
   .catch((err) => console.log(err));
 
 //file content
 getContents(__filename)
   .then((type) => {
-    console.log("content:", type);
+    console.log('content:', type);
   })
   .catch((err) => console.log(err));
 
 //dir content
 getContents(__dirname)
   .then((type) => {
-    console.log("Folder content:", type);
+    console.log('Folder content:', type);
   })
   .catch((err) => console.log(err));
 
 //file size
 getSize(__filename)
   .then((size) => {
-    console.log("File Size:", size);
+    console.log('File Size:', size);
   })
   .catch((err) => console.log(err));
 
 //dir size
 getSize(__dirname)
   .then((size) => {
-    console.log("Folder Size:", size);
+    console.log('Folder Size:', size);
   })
   .catch((err) => console.log(err));

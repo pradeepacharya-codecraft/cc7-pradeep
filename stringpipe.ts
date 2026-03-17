@@ -7,7 +7,7 @@ appends a cat emojee
 Use compose or pipe mechanism to come up with a function  trim,  that composes the above functions.  Test it with some inputs.
 
  */
-import assert from "assert";
+import assert from 'assert';
 
 type FuncT<T> = (arg: T) => T;
 
@@ -20,26 +20,26 @@ const pipe = <T>(...fns: FuncT<T>[]): FuncT<T> => {
 const trimRight = (str: string) => str.trimEnd();
 const trimLeft = (str: string) => str.trimStart();
 const toLower = (str: string) => str.toLocaleLowerCase();
-const catEmojee = (str: string) => str + "🐱";
+const catEmojee = (str: string) => str + '🐱';
 
 const tap = (message: string) => (str: string) => {
-  console.log(message, ":", str);
+  console.log(message, ':', str);
   return str;
 };
 
 const trimRtrTrimLCatEmojeeCompose = pipe(
   catEmojee,
-  tap("after catEmojee"),
+  tap('after catEmojee'),
   trimLeft,
 
-  tap("After toLower"),
+  tap('After toLower'),
   trimRight,
-  tap("After trimRight"),
-  toLower,
+  tap('After trimRight'),
+  toLower
 );
 
 assert.deepStrictEqual(
-  trimRtrTrimLCatEmojeeCompose("  Welcome to Ts and Js course "),
-  "welcome to ts and js course 🐱",
-  "pip line failed",
+  trimRtrTrimLCatEmojeeCompose('  Welcome to Ts and Js course '),
+  'welcome to ts and js course 🐱',
+  'pip line failed'
 );

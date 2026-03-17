@@ -11,7 +11,7 @@
  * @returns return true if the given value is comes under the cutoff else false
  */
 
-import assert from "assert";
+import assert from 'assert';
 
 function createCutOff(cutoffValue: number): (value: number) => boolean {
   return (value: number): boolean => {
@@ -21,18 +21,6 @@ function createCutOff(cutoffValue: number): (value: number) => boolean {
 
 const cutOff100 = createCutOff(100);
 
-assert.strictEqual(
-  cutOff100(89),
-  true,
-  "the vaue 89 is not in the cutoff range",
-);
-assert.strictEqual(
-  cutOff100(189),
-  false,
-  "the value 189 is not in the cutoff range",
-);
-assert.strictEqual(
-  cutOff100(100),
-  true,
-  "the value 100 is not in the cutoff range",
-);
+assert.strictEqual(cutOff100(89), true, 'the vaue 89 is not in the cutoff range');
+assert.strictEqual(cutOff100(189), false, 'the value 189 is not in the cutoff range');
+assert.strictEqual(cutOff100(100), true, 'the value 100 is not in the cutoff range');

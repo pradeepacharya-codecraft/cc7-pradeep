@@ -1,7 +1,7 @@
 //  Find the second largest number in a given array first by using an imperative approach without using reduce. Use a forEach HOF to iterate over items and figure out the second largest item.
 //  Also give a solution using reduce method.
 
-import assert from "assert";
+import assert from 'assert';
 
 /**
  * imperative approach  and forEach method to find second largest element of array .
@@ -47,7 +47,7 @@ const scndLargReduce = array.reduce(
     }
     return acc;
   },
-  { large: -Infinity, secondLarge: -Infinity },
+  { large: -Infinity, secondLarge: -Infinity }
 );
 
 assert.deepStrictEqual(scndLargReduce.secondLarge, 11);

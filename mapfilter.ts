@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert from 'assert';
 
 /**
  * Creates a new array by applying a transform function to each element
@@ -34,11 +34,11 @@ const numbers = [1, 2, 3, 4];
 assert.deepStrictEqual(
   map(numbers, (n) => n * n),
   [1, 4, 9, 16],
-  "failed map function",
+  'failed map function'
 );
 
 assert.deepStrictEqual(
   filter(numbers, (n) => n % 2 === 0),
   [2, 4],
-  "failed filter function",
+  'failed filter function'
 );

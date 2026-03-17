@@ -1,42 +1,26 @@
-## 📌 Assignment Set-1 Submission
-
+## 📌 Assignment Submission – Post Browser App
 
 ## ✅ Tasks Completed
 
-- [ ] 1. Basic Blue Heart Pattern  
-- [ ] 2. Blue and Green Heart Pattern  
-- [ ] 3. Alternating Heart Pattern  
-- [ ] 4. Bounded Heart Pattern  
-- [ ] 5. Print N Odd or Even Numbers  
-- [ ] 6. Pad Zeros Before a Number  
-- [ ] 7. Convert Decimal to Binary  
-- [ ] 8. Substring Until Repeating Character  
-- [ ] 9. Add Corresponding Array Elements  
-- [ ] 10. Compute String Length (Without .length)  
-- [ ] 11. First N Perfect Squares  
-- [ ] 12. Get Day of Week from Name  
+- Built Post Browser app using **Vanilla TypeScript + Vite**
+- Implemented API integration for posts and comments
+- Designed app using **MVC architecture**
+- Added navigation (Next / Previous / Refresh)
+- Implemented **in-memory caching (Map)** for posts & comments
+- Styled UI using plain CSS (centered layout, scrollable comments)
+- Configured **ESLint, Prettier, and Husky pre-commit hooks**
 
 ---
 
 ## 🧪 Testing
 
-- All functions are tested using `assert`
-- All test cases pass successfully
-- Edge cases handled where required
+- Verified post loading and navigation
+- Checked comments rendering for each post
+- Confirmed caching avoids repeated API calls
 
 ---
 
-## 📂 Implementation Notes
+## 📂 Notes
 
-- Solutions written in TypeScript
-- Followed clean coding practices
-- Proper function documentation added
-- No use of restricted built-in methods where mentioned
-
----
-
-## 🔎 Review Notes
-
-Kindly review the implementation and provide feedback if improvements are needed.
-
-Thank you 🙏
+- No external libraries used
+- Clean, modular, and scalable structure followed

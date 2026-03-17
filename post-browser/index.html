@@ -13,24 +13,33 @@
     </header>
 
     <main class="main-content">
+      <!-- Post Counter -->
       <div class="post-count" id="post-count">Post 1 of 100</div>
 
+      <!-- Card -->
       <div class="card">
         <h2 id="post-title">Loading...</h2>
-        <p id="post-body"></p>
+        <p id="post-body">Please wait...</p>
 
-        <div class="button-group top-buttons">
+        <!-- Top Buttons (Refresh / Comments) -->
+        <div class="top-buttons-left">
           <button id="refresh-btn">Refresh</button>
           <button id="comment-btn">Comments</button>
         </div>
+
+        <!-- Divider -->
+        <hr class="divider" />
+
+        <!-- Bottom Navigation (Prev / Next) -->
+        <div class="bottom-nav-line">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
       </div>
 
-      <div class="bottom-nav">
-        <button id="prev-btn">Previous</button>
-        <button id="next-btn">Next</button>
-      </div>
-
+      <!-- Comments Section -->
       <div id="comments-section" class="comments hidden">
+        <h3>Comments</h3>
         <div id="comments-list"></div>
       </div>
     </main>

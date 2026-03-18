@@ -27,6 +27,7 @@
   "homepage": "https://github.com/pradeepacharya-codecraft/cc7-pradeep#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.2",
     "@types/assert": "^1.5.11",
     "@types/node": "^25.4.0",
     "@typescript-eslint/eslint-plugin": "^8.57.0",

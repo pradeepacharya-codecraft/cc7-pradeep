@@ -1,5 +1,5 @@
-import movieData from "./movies.json" with { type: "json" };
-import assert from "assert";
+import movieData from './movies.json' with { type: 'json' };
+import assert from 'assert';
 /**
  * You need to embed this json in your program and load it and have the data in a variable for your use.  Write the following functions:
 * Get the array of all actor names  (cast) that are seen in the movies data.
@@ -35,8 +35,8 @@ function moviesByYear() {
 }
 
 const res = {
-  "2017": ["The Book of Love", "Split", "xXx: Return of Xander Cage"],
-  "2018": ["Insidious: The Last Key", "The Strange Ones", "Sweet Country"],
+  '2017': ['The Book of Love', 'Split', 'xXx: Return of Xander Cage'],
+  '2018': ['Insidious: The Last Key', 'The Strange Ones', 'Sweet Country']
 };
-assert.deepStrictEqual(moviesByYear(), res, "moviesBy year function failed ");
+assert.deepStrictEqual(moviesByYear(), res, 'moviesBy year function failed ');
 console.log(actors());

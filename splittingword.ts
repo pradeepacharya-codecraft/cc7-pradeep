@@ -14,7 +14,7 @@ water 20`
 
  */
 
-import assert from "assert";
+import assert from 'assert';
 
 const purchases = `items qty
 apple 24
@@ -24,15 +24,15 @@ onion 31
 water 10`;
 
 const result = purchases
-  .split("\n")
-  .filter((line) => !line.includes("4"))
+  .split('\n')
+  .filter((line) => !line.includes('4'))
   .map((line, index) => {
     if (index === 0) return line;
 
-    const [item, qty] = line.split(" ");
+    const [item, qty] = line.split(' ');
     return `${item} ${Number(qty) + 10}`;
   })
-  .join("\n");
+  .join('\n');
 
 const expected = `items qty
 mango 60

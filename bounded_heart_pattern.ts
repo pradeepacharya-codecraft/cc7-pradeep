@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert from 'assert';
 
 /**
  * Boundary hearts are 💚 and inner hearts are 💙
@@ -11,23 +11,23 @@ function boundedHeartPattern(n: number): string {
     return "Value of 'n' cannot be negative";
   }
 
-  let result = "";
+  let result = '';
 
   for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= i; j++) {
       if (j === 1 || j === i || i === n) {
-        result += "💚";
+        result += '💚';
       } else {
-        result += "💙";
+        result += '💙';
       }
 
       if (j < i) {
-        result += " ";
+        result += ' ';
       }
     }
 
     if (i < n) {
-      result += "\n";
+      result += '\n';
     }
   }
 
@@ -41,27 +41,26 @@ const n4 = 5;
 const n5 = -1;
 
 assert(
-  boundedHeartPattern(n1) === "💚",
-  `Expected "💚" but received "${boundedHeartPattern(n1)}".`,
+  boundedHeartPattern(n1) === '💚',
+  `Expected "💚" but received "${boundedHeartPattern(n1)}".`
 );
 
 assert(
-  boundedHeartPattern(n2) === "💚\n💚 💚",
-  `Expected "💚\\n💚 💚" but received "${boundedHeartPattern(n2)}".`,
+  boundedHeartPattern(n2) === '💚\n💚 💚',
+  `Expected "💚\\n💚 💚" but received "${boundedHeartPattern(n2)}".`
 );
 
 assert(
-  boundedHeartPattern(n3) === "💚\n💚 💚\n💚 💚 💚",
-  `Expected "💚\\n💚 💚\\n💚 💚 💚" but received "${boundedHeartPattern(n3)}".`,
+  boundedHeartPattern(n3) === '💚\n💚 💚\n💚 💚 💚',
+  `Expected "💚\\n💚 💚\\n💚 💚 💚" but received "${boundedHeartPattern(n3)}".`
 );
 
 assert(
-  boundedHeartPattern(n4) ===
-    "💚\n💚 💚\n💚 💙 💚\n💚 💙 💙 💚\n💚 💚 💚 💚 💚",
-  `Expected "💚\\n💚 💚\\n💚 💙 💚\\n💚 💙 💙 💚\\n💚 💚 💚 💚 💚" but received "${boundedHeartPattern(n4)}".`,
+  boundedHeartPattern(n4) === '💚\n💚 💚\n💚 💙 💚\n💚 💙 💙 💚\n💚 💚 💚 💚 💚',
+  `Expected "💚\\n💚 💚\\n💚 💙 💚\\n💚 💙 💙 💚\\n💚 💚 💚 💚 💚" but received "${boundedHeartPattern(n4)}".`
 );
 
 assert(
   boundedHeartPattern(n5) === "Value of 'n' cannot be negative",
-  `Expected "Value of 'n' cannot be negative" but received "${boundedHeartPattern(n5)}".`,
+  `Expected "Value of 'n' cannot be negative" but received "${boundedHeartPattern(n5)}".`
 );

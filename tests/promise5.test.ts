@@ -1,8 +1,8 @@
-import { describe, it, expect, vi } from "vitest";
-import { delay } from "../promise5.ts";
+import { describe, it, expect, vi } from 'vitest';
+import { delay } from '../promise5.ts';
 
-describe("delay function", () => {
-  it("should resolve after given milliseconds", async () => {
+describe('delay function', () => {
+  it('should resolve after given milliseconds', async () => {
     vi.useFakeTimers(); // Vitest takes control of timers
 
     const promise = delay(1000); // start delay

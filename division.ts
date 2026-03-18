@@ -7,7 +7,7 @@
 
  */
 
-import assert from "assert";
+import assert from 'assert';
 
 const numbers = [34, 45, 2, 53, 84, 542, 31, 23];
 

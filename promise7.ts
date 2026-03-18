@@ -10,14 +10,14 @@
 
 // Test this APIService class using vitest.
 
-type Post = {
+export type Post = {
   userId: number;
   id: number;
   title: string;
   body: string;
 };
 
-type Comment = {
+export type Comment = {
   postId: number;
   id: number;
   name: string;
@@ -26,20 +26,16 @@ type Comment = {
 };
 export class APIService {
   async fetchPost(id: number): Promise<Post> {
-    const response = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${id}`,
-    );
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
     if (!response.ok) {
-      throw new Error("Failed to fetch post");
+      throw new Error('Failed to fetch post');
     }
     return response.json();
   }
   async fetchComments(id: number, count: number): Promise<Comment[]> {
-    const response = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${id}/comments`,
-    );
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
     if (!response.ok) {
-      throw new Error("Failed to fetch comments");
+      throw new Error('Failed to fetch comments');
     }
     const comments: Comment[] = await response.json();
     return comments.slice(0, count);

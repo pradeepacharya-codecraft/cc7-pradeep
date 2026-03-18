@@ -3,68 +3,68 @@
 // Get the array of quote strings
 // Array of all authors by removing any duplicates using reduce.
 
-import assert from "assert";
+import assert from 'assert';
 const quotes = [
   {
-    text: "Genius is one percent inspiration and ninety-nine percent perspiration.",
-    author: "Thomas Edison",
+    text: 'Genius is one percent inspiration and ninety-nine percent perspiration.',
+    author: 'Thomas Edison'
   },
   {
-    text: "You can observe a lot just by watching.",
-    author: "Yogi Berra",
+    text: 'You can observe a lot just by watching.',
+    author: 'Yogi Berra'
   },
   {
-    text: "To invent, you need a good imagination and a pile of junk",
-    author: "Thomas Edison",
+    text: 'To invent, you need a good imagination and a pile of junk',
+    author: 'Thomas Edison'
   },
   {
-    text: "Difficulties increase the nearer we get to the goal.",
-    author: "Yogi Berra",
+    text: 'Difficulties increase the nearer we get to the goal.',
+    author: 'Yogi Berra'
   },
   {
-    text: "Fate is in your hands and no one elses",
-    author: "Byron Pulsifer",
+    text: 'Fate is in your hands and no one elses',
+    author: 'Byron Pulsifer'
   },
   {
-    text: "Be the chief but never the lord.",
-    author: "Lao Tzu",
+    text: 'Be the chief but never the lord.',
+    author: 'Lao Tzu'
   },
   {
-    text: "Nothing happens unless first we dream.",
-    author: "Byron Pulsifer",
+    text: 'Nothing happens unless first we dream.',
+    author: 'Byron Pulsifer'
   },
   {
-    text: "Well begun is half done.",
-    author: "Aristotle",
+    text: 'Well begun is half done.',
+    author: 'Aristotle'
   },
   {
-    text: "Life is a learning experience, only if you learn.",
-    author: "Yogi Berra",
+    text: 'Life is a learning experience, only if you learn.',
+    author: 'Yogi Berra'
   },
   {
-    text: "Self-complacency is fatal to progress.",
-    author: "Margaret Sangster",
+    text: 'Self-complacency is fatal to progress.',
+    author: 'Margaret Sangster'
   },
   {
-    text: "Peace comes from within. Do not seek it without.",
-    author: "Buddha",
+    text: 'Peace comes from within. Do not seek it without.',
+    author: 'Buddha'
   },
   {
-    text: "What you give is what you get.",
-    author: "Byron Pulsifer",
+    text: 'What you give is what you get.',
+    author: 'Byron Pulsifer'
   },
   {
-    text: "We can only learn to love by loving.",
-    author: "Lao Tzu",
+    text: 'We can only learn to love by loving.',
+    author: 'Lao Tzu'
   },
   {
-    text: "Life is change. Growth is optional. Choose wisely.",
-    author: "Karen Clark",
+    text: 'Life is change. Growth is optional. Choose wisely.',
+    author: 'Karen Clark'
   },
   {
     text: "You'll see it when you believe it.",
-    author: "Buddha",
-  },
+    author: 'Buddha'
+  }
 ];
 
 const quotesByAuthor = quotes.reduce<Record<string, string[]>>((acc, quote) => {
@@ -80,33 +80,30 @@ const quotesByAuthor = quotes.reduce<Record<string, string[]>>((acc, quote) => {
 assert.deepStrictEqual(
   quotesByAuthor,
   {
-    "Thomas Edison": [
-      "Genius is one percent inspiration and ninety-nine percent perspiration.",
-      "To invent, you need a good imagination and a pile of junk",
+    'Thomas Edison': [
+      'Genius is one percent inspiration and ninety-nine percent perspiration.',
+      'To invent, you need a good imagination and a pile of junk'
     ],
-    "Yogi Berra": [
-      "You can observe a lot just by watching.",
-      "Difficulties increase the nearer we get to the goal.",
-      "Life is a learning experience, only if you learn.",
+    'Yogi Berra': [
+      'You can observe a lot just by watching.',
+      'Difficulties increase the nearer we get to the goal.',
+      'Life is a learning experience, only if you learn.'
     ],
-    "Byron Pulsifer": [
-      "Fate is in your hands and no one elses",
-      "Nothing happens unless first we dream.",
-      "What you give is what you get.",
+    'Byron Pulsifer': [
+      'Fate is in your hands and no one elses',
+      'Nothing happens unless first we dream.',
+      'What you give is what you get.'
     ],
-    "Lao Tzu": [
-      "Be the chief but never the lord.",
-      "We can only learn to love by loving.",
-    ],
-    Aristotle: ["Well begun is half done."],
-    "Margaret Sangster": ["Self-complacency is fatal to progress."],
+    'Lao Tzu': ['Be the chief but never the lord.', 'We can only learn to love by loving.'],
+    Aristotle: ['Well begun is half done.'],
+    'Margaret Sangster': ['Self-complacency is fatal to progress.'],
     Buddha: [
-      "Peace comes from within. Do not seek it without.",
-      "You'll see it when you believe it.",
+      'Peace comes from within. Do not seek it without.',
+      "You'll see it when you believe it."
     ],
-    "Karen Clark": ["Life is change. Growth is optional. Choose wisely."],
+    'Karen Clark': ['Life is change. Growth is optional. Choose wisely.']
   },
-  "quotesByAuthor grouping failed",
+  'quotesByAuthor grouping failed'
 );
 
 /**
@@ -124,17 +121,16 @@ function getQuotesContainingWord(word: string) {
 }
 
 assert.deepStrictEqual(
-  getQuotesContainingWord("dream"),
-  ["Nothing happens unless first we dream."],
-  "Filtering by word 'dream' failed",
+  getQuotesContainingWord('dream'),
+  ['Nothing happens unless first we dream.'],
+  "Filtering by word 'dream' failed"
 );
 
 assert.deepStrictEqual(
-  getQuotesContainingWord("peace"),
-  ["Peace comes from within. Do not seek it without."],
-  "Filtering by word 'peace' failed",
+  getQuotesContainingWord('peace'),
+  ['Peace comes from within. Do not seek it without.'],
+  "Filtering by word 'peace' failed"
 );
-
 
 /**
  * retrieving the quote text
@@ -148,26 +144,24 @@ function getQuoteString() {
 assert.deepStrictEqual(
   getQuoteString(),
   [
-    "Genius is one percent inspiration and ninety-nine percent perspiration.",
-    "You can observe a lot just by watching.",
-    "To invent, you need a good imagination and a pile of junk",
-    "Difficulties increase the nearer we get to the goal.",
-    "Fate is in your hands and no one elses",
-    "Be the chief but never the lord.",
-    "Nothing happens unless first we dream.",
-    "Well begun is half done.",
-    "Life is a learning experience, only if you learn.",
-    "Self-complacency is fatal to progress.",
-    "Peace comes from within. Do not seek it without.",
-    "What you give is what you get.",
-    "We can only learn to love by loving.",
-    "Life is change. Growth is optional. Choose wisely.",
-    "You'll see it when you believe it.",
+    'Genius is one percent inspiration and ninety-nine percent perspiration.',
+    'You can observe a lot just by watching.',
+    'To invent, you need a good imagination and a pile of junk',
+    'Difficulties increase the nearer we get to the goal.',
+    'Fate is in your hands and no one elses',
+    'Be the chief but never the lord.',
+    'Nothing happens unless first we dream.',
+    'Well begun is half done.',
+    'Life is a learning experience, only if you learn.',
+    'Self-complacency is fatal to progress.',
+    'Peace comes from within. Do not seek it without.',
+    'What you give is what you get.',
+    'We can only learn to love by loving.',
+    'Life is change. Growth is optional. Choose wisely.',
+    "You'll see it when you believe it."
   ],
-  "getQuoteString failed to return correct quote texts",
+  'getQuoteString failed to return correct quote texts'
 );
-
-
 
 /**
  * Array of all authors by removing any duplicates using reduce.
@@ -186,14 +180,14 @@ function authorNames() {
 assert.deepStrictEqual(
   authorNames().sort(),
   [
-    "Thomas Edison",
-    "Yogi Berra",
-    "Byron Pulsifer",
-    "Lao Tzu",
-    "Aristotle",
-    "Margaret Sangster",
-    "Buddha",
-    "Karen Clark",
+    'Thomas Edison',
+    'Yogi Berra',
+    'Byron Pulsifer',
+    'Lao Tzu',
+    'Aristotle',
+    'Margaret Sangster',
+    'Buddha',
+    'Karen Clark'
   ].sort(),
-  "authorNames did not return unique authors correctly",
+  'authorNames did not return unique authors correctly'
 );

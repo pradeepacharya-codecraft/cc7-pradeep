@@ -6,7 +6,7 @@
 
  */
 
-import assert from "assert";
+import assert from 'assert';
 
 //returns the fibnocci value
 
@@ -34,5 +34,5 @@ const fibIndex = list.map((index) => fib(index));
 assert.deepStrictEqual(
   fibIndex,
   [1, 1, 5, 13],
-  "fibnocii function and filtering didnot work as expected",
+  'fibnocii function and filtering didnot work as expected'
 );

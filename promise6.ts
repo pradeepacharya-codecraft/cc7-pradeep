@@ -6,7 +6,7 @@
 
 // Implement a simple vitest based test for the above.
 
-import { delay as sleep } from "./promise5.ts";
+import { delay as sleep } from './promise5.ts';
 
 type Geo = {
   lat: string;
@@ -40,12 +40,12 @@ export type User = {
 
 export async function getUsers(delay = 2000): Promise<User[]> {
   try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
 
     await sleep(delay);
 
     return response.json();
   } catch (error) {
-    throw new Error("Failed to fetch users", { cause: error });
+    throw new Error('Failed to fetch users', { cause: error });
   }
 }

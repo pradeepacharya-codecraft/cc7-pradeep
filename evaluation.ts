@@ -1,4 +1,4 @@
-import { Stack } from "./stack.ts";
+import { Stack } from './stack.ts';
 
 /**
  * Evaluates a mathematical expression written in infix notation.
@@ -25,34 +25,31 @@ export function evaluateExpression(expression: string): number | undefined {
 function infixToPostfix(expression: string): string[] | undefined {
   const output: string[] = [];
   const operators = new Stack<string>();
-  if (expression === "") throw new Error("Expression cannot be Empty");
+  if (expression === '') throw new Error('Expression cannot be Empty');
 
-  const tokens = expression.split(" ");
+  const tokens = expression.split(' ');
 
   const precedence = (op: string): number => {
-    if (op === "+" || op === "-") return 1;
-    if (op === "*" || op === "/") return 2;
+    if (op === '+' || op === '-') return 1;
+    if (op === '*' || op === '/') return 2;
     return 0;
   };
 
   for (const token of tokens) {
     if (!isNaN(Number(token))) {
       output.push(token);
-    } else if (token === "(") {
+    } else if (token === '(') {
       operators.push(token);
     }
 
     // )
-    else if (token === ")") {
-      while (!operators.isEmpty && operators.top() !== "(") {
+    else if (token === ')') {
+      while (!operators.isEmpty && operators.top() !== '(') {
         output.push(operators.pop()!);
       }
       operators.pop();
-    } else if (["+", "-", "*", "/"].includes(token)) {
-      while (
-        !operators.isEmpty &&
-        precedence(operators.top()!) >= precedence(token)
-      ) {
+    } else if (['+', '-', '*', '/'].includes(token)) {
+      while (!operators.isEmpty && precedence(operators.top()!) >= precedence(token)) {
         output.push(operators.pop()!);
       }
       operators.push(token);
@@ -83,16 +80,16 @@ function evaluatePostfix(postfix: string[]): number | undefined {
       let result: number;
 
       switch (token) {
-        case "+":
+        case '+':
           result = left + right;
           break;
-        case "-":
+        case '-':
           result = left - right;
           break;
-        case "*":
+        case '*':
           result = left * right;
           break;
-        case "/":
+        case '/':
           if (right === 0) return undefined;
           result = left / right;
           break;

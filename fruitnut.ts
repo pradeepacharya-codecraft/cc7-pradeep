@@ -1,64 +1,59 @@
-import assert from "assert";
+import assert from 'assert';
 
 //We have an array that contains a list of objects that represent a fruit or a nut like so.
 const objects = [
   {
-    name: "Banana",
-    type: "fruit",
-    treats: [
-      "constipation",
-      "vitamin deficiency",
-      "skin issues",
-      "sleep problems",
-    ],
+    name: 'Banana',
+    type: 'fruit',
+    treats: ['constipation', 'vitamin deficiency', 'skin issues', 'sleep problems'],
     nutritions: {
       protein: 8,
       carbs: 40,
       sugar: 30,
-      vitamins: 45,
-    },
+      vitamins: 45
+    }
   },
   {
-    name: "Badam",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "sugar"],
+    name: 'Badam',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'sugar'],
     nutritions: {
       protein: 18,
       carbs: 20,
       sugar: 20,
-      vitamins: 65,
-    },
+      vitamins: 65
+    }
   },
   {
-    name: "Cashew",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "bone issues"],
+    name: 'Cashew',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'bone issues'],
     nutritions: {
       protein: 22,
       carbs: 22,
-      vitamins: 60,
-    },
+      vitamins: 60
+    }
   },
   {
-    name: "Wallnut",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "bone issues"],
+    name: 'Wallnut',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'bone issues'],
     nutritions: {
       protein: 33,
       carbs: 26,
-      vitamins: 64,
-    },
+      vitamins: 64
+    }
   },
   {
-    name: "Apple",
-    type: "fruit",
-    treats: ["heart problems", "skin issues", "bone issues", "migraine"],
+    name: 'Apple',
+    type: 'fruit',
+    treats: ['heart problems', 'skin issues', 'bone issues', 'migraine'],
     nutritions: {
       protein: 22,
       carbs: 22,
-      vitamins: 60,
-    },
-  },
+      vitamins: 60
+    }
+  }
 ];
 
 /**
@@ -78,21 +73,21 @@ function highNutrition() {
       }
       return acc;
     },
-    {} as Record<string, string>,
+    {} as Record<string, string>
   );
 }
 
 const expected = {
-  protein: "Wallnut",
-  carbs: "Banana",
-  sugar: "Banana",
-  vitamins: "Badam",
+  protein: 'Wallnut',
+  carbs: 'Banana',
+  sugar: 'Banana',
+  vitamins: 'Badam'
 };
 
 assert.deepStrictEqual(
   highNutrition(),
   expected,
-  " highNutrition function failed to filterout the  high nutrition values correctly",
+  ' highNutrition function failed to filterout the  high nutrition values correctly'
 );
 
 /**
@@ -110,12 +105,12 @@ function getUniqueNutritions() {
   return [...nutritions];
 }
 
-const nutritions = ["protein", "carbs", "sugar", "vitamins"];
+const nutritions = ['protein', 'carbs', 'sugar', 'vitamins'];
 
 assert.deepStrictEqual(
   getUniqueNutritions(),
   nutritions,
-  "function failed to retrieve the nutritions from the objects ",
+  'function failed to retrieve the nutritions from the objects '
 );
 
 /**
@@ -124,7 +119,7 @@ assert.deepStrictEqual(
 
 function UniqueHealthTreatment() {
   const treatement = objects
-    .filter((obj) => obj.type === "fruit")
+    .filter((obj) => obj.type === 'fruit')
     .reduce((acc, current) => {
       current.treats.forEach((elem) => {
         acc.add(elem);
@@ -138,15 +133,15 @@ function UniqueHealthTreatment() {
 assert.deepStrictEqual(
   UniqueHealthTreatment(),
   [
-    "constipation",
-    "vitamin deficiency",
-    "skin issues",
-    "sleep problems",
-    "heart problems",
-    "bone issues",
-    "migraine",
+    'constipation',
+    'vitamin deficiency',
+    'skin issues',
+    'sleep problems',
+    'heart problems',
+    'bone issues',
+    'migraine'
   ],
-  "failed to filterout all unique health conditions that the fruits treat",
+  'failed to filterout all unique health conditions that the fruits treat'
 );
 
 /**
@@ -155,7 +150,7 @@ assert.deepStrictEqual(
 
 function commonNutTreatment() {
   return objects
-    .filter((object) => object.type === "nut")
+    .filter((object) => object.type === 'nut')
     .reduce((acc: string[], current) => {
       if (acc.length === 0) {
         return [...current.treats];
@@ -165,11 +160,11 @@ function commonNutTreatment() {
     }, []);
 }
 
-const nutbenefit = ["bp", "protein deficiency", "skin issues"];
+const nutbenefit = ['bp', 'protein deficiency', 'skin issues'];
 assert.deepStrictEqual(
   commonNutTreatment(),
   nutbenefit,
-  "function failed to give us the comman nut benefit",
+  'function failed to give us the comman nut benefit'
 );
 
 /**
@@ -178,64 +173,56 @@ assert.deepStrictEqual(
 
 function addTotalNutritions() {
   return objects.map((obj) => {
-    const total = Object.values(obj.nutritions).reduce(
-      (sum, value) => sum + value,
-      0,
-    );
+    const total = Object.values(obj.nutritions).reduce((sum, value) => sum + value, 0);
 
     return {
       ...obj,
-      totalNutritions: total,
+      totalNutritions: total
     };
   });
 }
 
 const result = [
   {
-    name: "Banana",
-    type: "fruit",
-    treats: [
-      "constipation",
-      "vitamin deficiency",
-      "skin issues",
-      "sleep problems",
-    ],
+    name: 'Banana',
+    type: 'fruit',
+    treats: ['constipation', 'vitamin deficiency', 'skin issues', 'sleep problems'],
     nutritions: { protein: 8, carbs: 40, sugar: 30, vitamins: 45 },
-    totalNutritions: 123,
+    totalNutritions: 123
   },
   {
-    name: "Badam",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "sugar"],
+    name: 'Badam',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'sugar'],
     nutritions: { protein: 18, carbs: 20, sugar: 20, vitamins: 65 },
-    totalNutritions: 123,
+    totalNutritions: 123
   },
   {
-    name: "Cashew",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "bone issues"],
+    name: 'Cashew',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'bone issues'],
     nutritions: { protein: 22, carbs: 22, vitamins: 60 },
-    totalNutritions: 104,
+    totalNutritions: 104
   },
   {
-    name: "Wallnut",
-    type: "nut",
-    treats: ["bp", "protein deficiency", "skin issues", "bone issues"],
+    name: 'Wallnut',
+    type: 'nut',
+    treats: ['bp', 'protein deficiency', 'skin issues', 'bone issues'],
     nutritions: { protein: 33, carbs: 26, vitamins: 64 },
-    totalNutritions: 123,
+    totalNutritions: 123
   },
   {
-    name: "Apple",
-    type: "fruit",
-    treats: ["heart problems", "skin issues", "bone issues", "migraine"],
+    name: 'Apple',
+    type: 'fruit',
+    treats: ['heart problems', 'skin issues', 'bone issues', 'migraine'],
     nutritions: { protein: 22, carbs: 22, vitamins: 60 },
-    totalNutritions: 104,
-  },
+    totalNutritions: 104
+  }
 ];
 assert.deepStrictEqual(
   addTotalNutritions(),
   result,
-  "function failed to return the object with the added property",
+  'function failed to return the object with the added property'
 );
 
 /**
@@ -244,16 +231,11 @@ assert.deepStrictEqual(
 
 const totalNutrition = () =>
   objects.reduce(
-    (acc, obj) =>
-      acc + Object.values(obj.nutritions).reduce((sum, val) => sum + val, 0),
-    0,
+    (acc, obj) => acc + Object.values(obj.nutritions).reduce((sum, val) => sum + val, 0),
+    0
   );
 
-assert.deepStrictEqual(
-  totalNutrition(),
-  577,
-  "total nutrition value didnt match",
-);
+assert.deepStrictEqual(totalNutrition(), 577, 'total nutrition value didnt match');
 
 /**
  * Which fruits  / nuts solve the bone issues
@@ -261,17 +243,17 @@ assert.deepStrictEqual(
 
 function boneIssueNutrition() {
   const fruit_nut = objects.filter((obj) => {
-    return obj.treats.includes("bone issues");
+    return obj.treats.includes('bone issues');
   });
 
   return fruit_nut.map((obj) => obj.name);
 }
 
-const bone_nutritions = ["Cashew", "Wallnut", "Apple"];
+const bone_nutritions = ['Cashew', 'Wallnut', 'Apple'];
 assert.deepStrictEqual(
   boneIssueNutrition(),
   bone_nutritions,
-  "function boneNutrition failed to filter out the nutrition which helps to solve bone related problems ",
+  'function boneNutrition failed to filter out the nutrition which helps to solve bone related problems '
 );
 
 /**
@@ -299,8 +281,8 @@ function maxNutritionTypes() {
 
 assert.deepStrictEqual(
   maxNutritionTypes(),
-  ["Banana", "Badam"],
-  "function which return max nutrion item didnt match the exact result",
+  ['Banana', 'Badam'],
+  'function which return max nutrion item didnt match the exact result'
 );
 
 /**
@@ -309,16 +291,14 @@ assert.deepStrictEqual(
 
 function migraneVitamin() {
   return objects
-    .filter(
-      (obj) => obj.treats.includes("migraine") && obj.nutritions.vitamins >= 60,
-    )
+    .filter((obj) => obj.treats.includes('migraine') && obj.nutritions.vitamins >= 60)
     .map((obj) => obj.name);
 }
 
 assert.deepStrictEqual(
   migraneVitamin(),
-  ["Apple"],
-  "function failed to return  the fruits or nuts solve migraine and have vitamins greater than or equal to 60",
+  ['Apple'],
+  'function failed to return  the fruits or nuts solve migraine and have vitamins greater than or equal to 60'
 );
 
 /**
@@ -346,24 +326,20 @@ function lowestCarbs() {
     .map((e) => e[0]);
 }
 
-assert.deepStrictEqual(
-  lowestCarbs(),
-  ["Badam"],
-  "failed to filterout lowest carb nutrition",
-);
+assert.deepStrictEqual(lowestCarbs(), ['Badam'], 'failed to filterout lowest carb nutrition');
 
 /**
  * What is the total amount of proteins I will end up intaking if I eat each of the nuts except nuts those do not solve sugar issues as doctor has warned that my skin will become pale in case I eat such nuts?
  */
 function totalProtein() {
   return objects
-    .filter((obj) => obj.type === "nut" && obj.treats.includes("sugar"))
+    .filter((obj) => obj.type === 'nut' && obj.treats.includes('sugar'))
     .reduce((acc, obj) => {
       return acc + obj.nutritions.protein;
     }, 0);
 }
 
-assert.strictEqual(totalProtein(), 18, "totalProtein function failed");
+assert.strictEqual(totalProtein(), 18, 'totalProtein function failed');
 
 /**
  * If I eat one fruit and nut  each from the all fruits and nuts available in the above list, what is the quantity of vitamins I will end up intaking? Doctor has asked me to avoid fruit containing any sugar in it.
@@ -371,7 +347,7 @@ assert.strictEqual(totalProtein(), 18, "totalProtein function failed");
 
 function totalVitamins() {
   return objects
-    .filter((obj) => !(obj.type === "fruit" && obj.nutritions.sugar))
+    .filter((obj) => !(obj.type === 'fruit' && obj.nutritions.sugar))
     .reduce((acc, obj) => {
       if (obj.nutritions.vitamins) {
         return acc + obj.nutritions.vitamins;
@@ -381,4 +357,4 @@ function totalVitamins() {
     }, 0);
 }
 
-assert.strictEqual(totalVitamins(), 249, "totalVitamin function faield");
+assert.strictEqual(totalVitamins(), 249, 'totalVitamin function faield');

@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert from 'assert';
 
 /**
  * Returns substring until a repeating character is found
@@ -7,7 +7,7 @@ import assert from "assert";
  */
 
 function getStringSpecial(str: string): string {
-  let result = "";
+  let result = '';
 
   for (let i = 0; i < str.length; i++) {
     const currentChar = str[i];
@@ -30,27 +30,21 @@ function getStringSpecial(str: string): string {
   return result;
 }
 
-const s1 = "a dream that is";
-const s2 = "unparliamentary";
-const s3 = "abcabc";
-const s4 = "";
+const s1 = 'a dream that is';
+const s2 = 'unparliamentary';
+const s3 = 'abcabc';
+const s4 = '';
 
 assert(
-  getStringSpecial(s1) === "a dre",
-  `Expected "a dre" but received "${getStringSpecial(s1)}".`,
+  getStringSpecial(s1) === 'a dre',
+  `Expected "a dre" but received "${getStringSpecial(s1)}".`
 );
 
 assert(
-  getStringSpecial(s2) === "unparli",
-  `Expected "unparli" but received "${getStringSpecial(s2)}".`,
+  getStringSpecial(s2) === 'unparli',
+  `Expected "unparli" but received "${getStringSpecial(s2)}".`
 );
 
-assert(
-  getStringSpecial(s3) === "abc",
-  `Expected "abc" but received "${getStringSpecial(s3)}".`,
-);
+assert(getStringSpecial(s3) === 'abc', `Expected "abc" but received "${getStringSpecial(s3)}".`);
 
-assert(
-  getStringSpecial(s4) === "",
-  `Expected "" but received "${getStringSpecial(s4)}".`,
-);
+assert(getStringSpecial(s4) === '', `Expected "" but received "${getStringSpecial(s4)}".`);

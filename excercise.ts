@@ -26,7 +26,7 @@ abstract class Shape {
 class Rectangle extends Shape {
   constructor(
     private width: number,
-    private height: number,
+    private height: number
   ) {
     super();
     this.width = width;
@@ -61,12 +61,7 @@ class Circle extends Shape {
   }
 }
 
-const shapes: Shape[] = [
-  new Rectangle(10, 5),
-  new Rectangle(3, 4),
-  new Circle(3),
-  new Circle(1),
-];
+const shapes: Shape[] = [new Rectangle(10, 5), new Rectangle(3, 4), new Circle(3), new Circle(1)];
 
 let smallest = shapes[0];
 console.log(shapes);
@@ -76,4 +71,4 @@ for (const shape of shapes) {
   }
 }
 
-console.log("smallest area", smallest!.area());
+console.log('smallest area', smallest!.area());

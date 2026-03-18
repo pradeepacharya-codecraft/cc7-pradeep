@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert from 'assert';
 
 /**
  * pads zeros before a number to match required digits
@@ -9,7 +9,7 @@ import assert from "assert";
 
 function padZerosBeforeNumber(number: number, numOfDigits: number): string {
   if (numOfDigits < 0) {
-    return "Number of digits cannot be negative";
+    return 'Number of digits cannot be negative';
   }
 
   const numStr = number.toString();
@@ -19,10 +19,10 @@ function padZerosBeforeNumber(number: number, numOfDigits: number): string {
   }
 
   const zerosNeeded = numOfDigits - numStr.length;
-  let result = "";
+  let result = '';
 
   for (let i = 0; i < zerosNeeded; i++) {
-    result += "0";
+    result += '0';
   }
 
   result += numStr;
@@ -37,26 +37,26 @@ const n4 = 5;
 const n5 = -1;
 
 assert(
-  padZerosBeforeNumber(n1, 6) === "000233",
-  `Expected "000233" but received "${padZerosBeforeNumber(n1, 6)}".`,
+  padZerosBeforeNumber(n1, 6) === '000233',
+  `Expected "000233" but received "${padZerosBeforeNumber(n1, 6)}".`
 );
 
 assert(
-  padZerosBeforeNumber(n2, 4) === "0045",
-  `Expected "0045" but received "${padZerosBeforeNumber(n2, 4)}".`,
+  padZerosBeforeNumber(n2, 4) === '0045',
+  `Expected "0045" but received "${padZerosBeforeNumber(n2, 4)}".`
 );
 
 assert(
-  padZerosBeforeNumber(n3, 3) === "12345",
-  `Expected "12345" but received "${padZerosBeforeNumber(n3, 3)}".`,
+  padZerosBeforeNumber(n3, 3) === '12345',
+  `Expected "12345" but received "${padZerosBeforeNumber(n3, 3)}".`
 );
 
 assert(
-  padZerosBeforeNumber(n4, 1) === "5",
-  `Expected "5" but received "${padZerosBeforeNumber(n4, 1)}".`,
+  padZerosBeforeNumber(n4, 1) === '5',
+  `Expected "5" but received "${padZerosBeforeNumber(n4, 1)}".`
 );
 
 assert(
-  padZerosBeforeNumber(n4, n5) === "Number of digits cannot be negative",
-  `Expected "Number of digits cannot be negative" but received "${padZerosBeforeNumber(n4, n5)}".`,
+  padZerosBeforeNumber(n4, n5) === 'Number of digits cannot be negative',
+  `Expected "Number of digits cannot be negative" but received "${padZerosBeforeNumber(n4, n5)}".`
 );

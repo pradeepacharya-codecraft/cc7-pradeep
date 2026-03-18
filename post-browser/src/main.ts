@@ -80,22 +80,27 @@ async function loadComments(postId: number) {
 
   setLoadingState(false, 'comments');
 }
-
-/* ---------------- REFRESH ---------------- */
 async function refreshPost() {
+  // 👉 Reset to first post
+  currentPost = 1;
+
   const postKey = `post-${currentPost}`;
-  const commentsKey = `comments-${currentPost}`;
+
   setLoadingState(true, 'post');
 
   try {
     const post = await api.fetchPost(currentPost);
+
+    // Optional: clear entire cache (better for full reset)
+    cache.clear();
+
     cache.set(postKey, post);
-    cache.delete(commentsKey);
 
     postCountEl.textContent = `Post ${currentPost} of ${totalPosts}`;
     titleEl.textContent = post.title;
     bodyEl.textContent = post.body;
 
+    // Reset comments
     commentsVisible = false;
     commentsSection.classList.add('hidden');
     commentsList.innerHTML = '';

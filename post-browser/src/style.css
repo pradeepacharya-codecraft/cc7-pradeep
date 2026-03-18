@@ -1,4 +1,3 @@
-/* Reset + Base */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,7 @@ html {
   }
 }
 
-/* Body & Layout */
+/* Body */
 body {
   background: #082045;
   color: #fff;
@@ -29,6 +28,7 @@ body {
   min-height: 100vh;
 }
 
+/* Header / Footer */
 .header {
   color: #4a49f6;
   text-align: center;
@@ -40,12 +40,12 @@ body {
 .footer {
   margin-top: auto;
   background: #1c1c2e;
-  color: white;
   text-align: center;
   padding: 0.8rem;
   font-size: 0.9rem;
 }
 
+/* Layout */
 .main-content {
   width: 100%;
   max-width: 50rem;
@@ -57,7 +57,6 @@ body {
   text-align: center;
   margin-bottom: 1.2rem;
   font-size: 1.7rem;
-  font-weight: 500;
   color: #4a49f6;
 }
 
@@ -67,92 +66,86 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: white;
 }
 
+/* FIXED CONTENT AREA */
 .card p {
   font-size: 1.05rem;
-  color: white;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  min-height: 8rem; /* prevent flicker for large posts */
+
+  height: 10rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
 }
 
-/* Top Buttons (left-aligned) */
+/* Top Buttons */
 .top-buttons-left {
   display: flex;
   gap: 0.6rem;
-  justify-content: flex-start; /* left-aligned */
   margin-bottom: 1rem;
 }
 
 .top-buttons-left button {
-  padding: 0.55rem 1rem;
+  min-width: 100px;
+  height: 2.5rem;
   border-radius: 0.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
   border: none;
   cursor: pointer;
-  transition: 0.2s ease;
 }
 
-/* Top button colors */
 #refresh-btn {
   background: #7c5e2f;
-  color: #fff;
+  color: white;
 }
 #comment-btn {
   background: #059669;
-  color: #fff;
-}
-.top-buttons-left button:hover {
-  opacity: 0.85;
+  color: white;
 }
 
 /* Divider */
 .divider {
-  border: 0;
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
+  border: none;
   margin: 1rem 0;
 }
 
-/* Bottom navigation (Prev / Next) */
+/* Bottom Nav */
 .bottom-nav-line {
   display: flex;
   justify-content: space-between;
+  min-height: 2.5rem;
 }
 
 .bottom-nav-line button {
-  padding: 0.55rem 1rem;
+  min-width: 100px;
+  height: 2.5rem;
   border-radius: 0.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
   border: none;
   cursor: pointer;
-  flex: 0 0 auto; /* fixed width like top buttons */
 }
 
 #prev-btn {
   background: #6b7280;
-  color: white;
 }
 #next-btn {
   background: #4a49f6;
-  color: white;
-}
-.bottom-nav-line button:hover {
-  opacity: 0.85;
 }
 
-/* Disabled */
+/* DISABLED FIX (no flicker) */
 button:disabled {
-  opacity: 0.5;
+  opacity: 1;
+  filter: brightness(0.8);
   cursor: not-allowed;
 }
 
@@ -162,15 +155,6 @@ button:disabled {
   padding: 1.2rem;
   background: rgb(34, 34, 77);
   border-radius: 1rem;
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.comments h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.8rem;
-  color: #4a49f6;
 }
 
 #comments-list {
@@ -180,39 +164,12 @@ button:disabled {
 }
 
 .comment {
-  padding: 0.8rem 1rem;
+  padding: 0.8rem;
   background: rgb(50, 50, 95);
   border-radius: 0.7rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.comment-email {
-  font-size: 0.9rem;
-  color: #c0c0ff;
-  margin-bottom: 0.3rem;
-  font-weight: 500;
-}
-
-.comment-body {
-  font-size: 1rem;
-  color: #e0e0ff;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-  .bottom-nav-line {
-    flex-direction: column;
-  }
-  .bottom-nav-line button + button {
-    margin-top: 0.8rem;
-  }
-
-  .main-content {
-    max-width: 95%;
-    margin: 1rem auto;
-    padding: 0 0.5rem;
-  }
-  .card {
-    padding: 1.2rem;
-  }
+/* Hidden */
+.hidden {
+  display: none;
 }

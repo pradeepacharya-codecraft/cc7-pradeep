@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-
 /* ---------------- Initial Load ---------------- */
 test('Initial load - should show first post', async ({ page }) => {
   await page.goto('/');

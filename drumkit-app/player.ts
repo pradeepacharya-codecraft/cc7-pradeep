@@ -11,40 +11,45 @@ type NormalizedBeat = {
   key: string;
   timestamp: number;
 };
+/**
+ * normalize the timestamp of the record. handling of the pause,resume timestamp and setting the initial beat timestamp to 0.
+ * @param recording is an object
+ * @returns  normalized record .
+ */
 export function normalizeRecording(recording: Recording): NormalizedBeat[] {
   const result: NormalizedBeat[] = [];
 
   let pauseStart: number | null = null;
   let lastPauseStart: number | null = null;
   let pauseduration = 0;
-
-  for (const event of recording.beats) {
-    if (event.type === 'pause') {
-      pauseStart = event.timestamp;
-      lastPauseStart = event.timestamp;
+  //Here, item is just the collection of the events
+  for (const item of recording.beats) {
+    if (item.type === 'pause') {
+      pauseStart = item.timestamp;
+      lastPauseStart = item.timestamp;
       continue;
     }
 
-    if (event.type === 'resume') {
+    if (item.type === 'resume') {
       if (pauseStart !== null) {
-        pauseduration += event.timestamp - pauseStart;
+        pauseduration += item.timestamp - pauseStart;
         pauseStart = null;
       }
       continue;
     }
 
-    if (event.type === 'beat') {
+    if (item.type === 'beat') {
       let normalizedTime: number;
 
       if (lastPauseStart !== null) {
         normalizedTime = lastPauseStart;
         lastPauseStart = null;
       } else {
-        normalizedTime = event.timestamp - pauseduration;
+        normalizedTime = item.timestamp - pauseduration;
       }
 
       result.push({
-        key: event.key,
+        key: item.key,
         timestamp: normalizedTime
       });
     }
@@ -69,7 +74,7 @@ export class Player {
 
   normalizedBeats: NormalizedBeat[] = [];
 
-  currentTimeout: Timeout | null = null;
+  //currentTimeout: Timeout | null = null;
 
   constructor(
     private recording: Recording[],
@@ -89,7 +94,10 @@ export class Player {
   notify() {
     this.listeners.forEach((l) => l(this.beatIndex, this.totalBeats));
   }
-
+  /**
+   * this takes the parameter that tells which record should play and we normalize that particular record and play the normalizedRecord beat accordingly.
+   * @param currentPlayback is a name  of the record.
+   */
   play(currentPlayback: string) {
     for (const item of this.recording) {
       if (item.name === currentPlayback) {
@@ -114,8 +122,8 @@ export class Player {
     const prevTime = this.beatIndex === 0 ? 0 : this.normalizedBeats[this.beatIndex - 1]!.timestamp;
 
     const delay = beat!.timestamp - prevTime;
-
-    this.currentTimeout = setTimeout(() => {
+    //currentTimeout is decared as a class member because, just to make it available outside of the  scope.
+    const currentTimeout = setTimeout(() => {
       this.playback({
         key: beat!.key,
         timestamp: beat!.timestamp
@@ -128,15 +136,10 @@ export class Player {
       this.scheduleNext();
     }, delay);
 
-    this.sheduledPlaybackTimers.push(this.currentTimeout);
+    this.sheduledPlaybackTimers.push(currentTimeout);
   }
 
   pause() {
-    if (this.currentTimeout) {
-      clearTimeout(this.currentTimeout);
-      this.currentTimeout = null;
-    }
-
     this.sheduledPlaybackTimers.forEach((t) => clearTimeout(t));
     this.sheduledPlaybackTimers = [];
   }

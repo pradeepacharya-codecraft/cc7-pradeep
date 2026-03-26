@@ -54,11 +54,11 @@ describe('Player', () => {
 
     player.resume();
 
-    vi.advanceTimersByTime(1000);
-    expect(playbackMock).toHaveBeenCalledWith({ key: 'D', timestamp: 2000 });
+    vi.advanceTimersByTime(0);
+    expect(playbackMock).toHaveBeenCalledWith({ key: 'D', timestamp: 0 });
 
     vi.advanceTimersByTime(500);
-    expect(playbackMock).toHaveBeenCalledWith({ key: 'F', timestamp: 2500 });
+    expect(playbackMock).toHaveBeenCalledWith({ key: 'F', timestamp: 500 });
 
     expect(playbackMock).toHaveBeenCalledTimes(4);
   });
@@ -79,8 +79,8 @@ describe('Player', () => {
 
     player.resume();
 
-    vi.advanceTimersByTime(1000);
-    expect(playbackMock).toHaveBeenCalledWith({ key: 'D', timestamp: 2000 });
+    vi.advanceTimersByTime(0);
+    expect(playbackMock).toHaveBeenCalledWith({ key: 'D', timestamp: 0 });
 
     player.pause();
 
@@ -89,8 +89,8 @@ describe('Player', () => {
 
     player.resume();
 
-    vi.advanceTimersByTime(500);
-    expect(playbackMock).toHaveBeenCalledWith({ key: 'F', timestamp: 2500 });
+    vi.advanceTimersByTime(0);
+    expect(playbackMock).toHaveBeenCalledWith({ key: 'F', timestamp: 0 });
 
     expect(playbackMock).toHaveBeenCalledTimes(4);
   });

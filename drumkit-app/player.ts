@@ -67,6 +67,7 @@ export function normalizeRecording(recording: Recording): NormalizedBeat[] {
 }
 export class Player {
   listeners: Listener[] = [];
+  resumeOffset: number = 0;
 
   sheduledPlaybackTimers: Timeout[] = [];
 
@@ -147,6 +148,18 @@ export class Player {
 
   resume() {
     if (this.beatIndex >= this.normalizedBeats.length) return;
+
+    const remainingBeats = this.normalizedBeats.slice(this.beatIndex);
+    if (remainingBeats.length === 0) return;
+
+    const start = remainingBeats[0]!.timestamp;
+
+    this.normalizedBeats = remainingBeats.map((b) => ({
+      ...b,
+      timestamp: b.timestamp - start
+    }));
+
+    this.beatIndex = 0;
 
     this.scheduleNext();
   }

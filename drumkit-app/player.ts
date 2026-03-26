@@ -95,8 +95,9 @@ export class Player {
     this.listeners.forEach((l) => l(this.beatIndex, this.totalBeats));
   }
   /**
-   * this takes the parameter that tells which record should play and we normalize that particular record and play the normalizedRecord beat accordingly.
-   * @param currentPlayback is a name  of the record.
+   * Starts playback for the given recording name.
+   * Finds the matching recording, normalizes its beats, and schedules playback.
+   * @param currentPlayback - Name of the recording to play
    */
   play(currentPlayback: string) {
     for (const item of this.recording) {
@@ -122,7 +123,7 @@ export class Player {
     const prevTime = this.beatIndex === 0 ? 0 : this.normalizedBeats[this.beatIndex - 1]!.timestamp;
 
     const delay = beat!.timestamp - prevTime;
-    //currentTimeout is decared as a class member because, just to make it available outside of the  scope.
+
     const currentTimeout = setTimeout(() => {
       this.playback({
         key: beat!.key,

@@ -9,7 +9,7 @@ describe('delay function', () => {
 
     await vi.advanceTimersByTimeAsync(1000); // simulate 1 second passing
 
-    expect(promise).resolves.toBeUndefined(); // verify promise resolved
+    await expect(promise).resolves.toBeUndefined(); // verify promise resolved
 
     vi.useRealTimers(); // restore real timers
   });
